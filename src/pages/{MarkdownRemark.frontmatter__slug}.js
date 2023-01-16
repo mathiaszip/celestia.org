@@ -8,6 +8,7 @@ import Layout from "../components/layout";
 import FeaturedLearn from "../components/modules/featured-learn";
 import TocGroup from "../components/modules/toc-groups";
 import {Helmet} from "react-helmet";
+import ToC from "../components/modules/toc";
 
 const toc = require('./markdown-pages/learn/_toc.json');
 
@@ -20,6 +21,8 @@ export default function Template({
 
     const [showTocCategories,setShowTocCategories] = useState(false);
 
+    const enableSidebar = frontmatter.path == '/learn/' || (frontmatter.path != '/learn/' && (frontmatter.sidemenu === "true")) ? true : false;
+    console.log(enableSidebar);
 
     return (
 
@@ -35,7 +38,7 @@ export default function Template({
                         <div className={'inner small'}>
                             <h1 className={'h2'}>{frontmatter.title}</h1>
 
-                            {!frontmatter.path.includes("resources") &&
+                            {frontmatter.path.includes("learn") &&
                             <nav aria-label="breadcrumb">
                                 <ol className="breadcrumb">
                                     <Link to={frontmatter.path}>
@@ -60,11 +63,12 @@ export default function Template({
                         </div>}
 
                         <div className={'row sticky-row'}>
-                            <div className={'sticky-container col-lg-4'}>
+                            {enableSidebar && <div className={'sticky-container col-lg-4'}>
+
                                 <div className={'toc'}>
 
                                     <div className={`mobile-toc ${showTocCategories && 'show'}`} onClick={()=>setShowTocCategories(!showTocCategories)}>
-                                        Select category
+                                        {frontmatter.path === '/learn/' ? 'Select category' : 'Jump to...'}
                                         <svg id={'mobile-category'} viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
                                             <g stroke="none" strokeWidth="1" fill="none" fillRule="evenodd">
                                                 <g transform="translate(-485.000000, -1044.000000)">
@@ -79,8 +83,7 @@ export default function Template({
                                         </svg>
                                     </div>
 
-                                        <div className={'toc-inner'}>
-
+                                    {frontmatter.path === '/learn/' && <div className={'toc-inner'}>
                                             <div className={`category-menu ${showTocCategories && 'show'}`}>
                                                 {toc.map((group, groupIndex) =>{
                                                     return(
@@ -89,14 +92,24 @@ export default function Template({
                                                 })}
                                             </div>
                                         </div>
+                                    }
 
 
-                                        <a href={data.markdownRemark.frontmatter.edit} className={'d-none d-lg-flex suggest-button pl-0 ps-lg-4'} target={'_blank'} rel={'noreferrer'}>
+                                    {frontmatter.path !== '/learn/' && enableSidebar &&
+                                        <div className={'toc-inner'}>
+                                            <div className={`category-menu ${showTocCategories && 'show'}`}>
+                                                <ToC headings={headings} frontmatter={frontmatter}/>
+                                            </div>
+                                        </div>
+                                    }
+
+
+                                    {data.markdownRemark.frontmatter.edit && <a href={data.markdownRemark.frontmatter.edit} className={'d-none d-lg-flex suggest-button pl-0 ps-lg-4'} target={'_blank'} rel={'noreferrer'}>
                                             <i className={'icon-edit'}/>SUGGEST AN EDIT
-                                        </a>
-                                    </div>
-                            </div>
-                            <div className={'col-12 col-lg-8 ps-lg-5'}>
+                                        </a>}
+                                </div>
+                            </div>}
+                            <div className={`col-12 ${enableSidebar ? 'col-lg-8 ps-lg-5' : 'col-lg-12'}`}>
 
                                 <div
                                     className="blog-post-content"
@@ -104,9 +117,9 @@ export default function Template({
                                 />
 
 
-                                <a href={data.markdownRemark.frontmatter.edit} className={'d-lg-none suggest-button pl-0 ps-lg-4'} target={'_blank'} rel={'noreferrer'}>
+                                {data.markdownRemark.frontmatter.edit && <a href={data.markdownRemark.frontmatter.edit} className={'d-lg-none suggest-button pl-0 ps-lg-4'} target={'_blank'} rel={'noreferrer'}>
                                     <i className={'icon-edit'}/>SUGGEST AN EDIT
-                                </a>
+                                </a>}
                             </div>
                         </div>
 
@@ -171,6 +184,7 @@ export const pageQuery = graphql`
         title
         category
         subcategory
+        sidemenu
         image
         author{
             name
