@@ -447,7 +447,7 @@ export const teamMembers = [
         name : 'Diego Ferrer',
         title: 'Solutions Engineer',
         text: 'Former Smart Contract Engineer at Tessera, Celestia Modular Fellow',
-        image: 'team/DiegoFerrer.JPG',
+        image: 'team/DiegoFerrer.png',
         socials: {
             twitter : 'https://twitter.com/dferrersan',
             discord : '',
