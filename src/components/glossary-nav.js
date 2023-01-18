@@ -2,19 +2,24 @@ import * as React from "react"
 import { Link } from "gatsby"
 import {glossaries} from "../datas/glossary/data";
 
-class GlossaryNav extends React.Component {
-    render() {
+const GlossaryNav = ({url}) => {
+
+        const paths = url && url.split("/").filter(entry => entry !== "");
+        const lastPath = paths && paths[paths.length - 1];
+
         const allGlossaries = []
         let prev, next = []
 
-        glossaries.map(glossary =>{
-            Object.values(glossary)[0].map(result=>{
+
+        glossaries && glossaries.map(glossary =>{
+            glossary && Object.values(glossary)[0].map(result=>{
                 allGlossaries.push(result);
             })
         })
 
-        allGlossaries.map((glossary,index) => {
-            if(glossary.url === this.props.url){
+
+        allGlossaries && allGlossaries.map((glossary,index) => {
+            if(glossary.url === lastPath){
                 prev = allGlossaries[index-1] ? allGlossaries[index-1] : allGlossaries[allGlossaries.length-1]
                 next = allGlossaries[index+1] ? allGlossaries[index+1] : allGlossaries[0]
             }
@@ -29,7 +34,7 @@ class GlossaryNav extends React.Component {
                         <div className={'glossary'}>
                             <div className={'title'}>
                                 {prev.title}
-                                <i className={'icon-arrow-down'}></i>
+                                <i className={'icon-arrow-down'}/>
                             </div>
                             {prev.text}
                         </div>
@@ -40,7 +45,7 @@ class GlossaryNav extends React.Component {
                         <div className={'glossary'}>
                             <div className={'title'}>
                                 {next.title}
-                                <i className={'icon-arrow-down'}></i>
+                                <i className={'icon-arrow-down'}/>
                             </div>
                             {next.text}
                         </div>
@@ -49,7 +54,6 @@ class GlossaryNav extends React.Component {
             </div> : <div/>}
             </div>
         )
-    }
 }
 
 export default GlossaryNav

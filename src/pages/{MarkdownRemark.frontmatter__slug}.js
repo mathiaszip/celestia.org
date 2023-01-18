@@ -1,6 +1,5 @@
 import React, {useState} from "react"
 import {graphql, Link} from "gatsby"
-import Sticky from 'react-sticky-el';
 import Image from "../components/imageComponent";
 
 import {FooterBoxes} from "../datas/resources/content";
@@ -22,13 +21,13 @@ export default function Template({
     const [showTocCategories,setShowTocCategories] = useState(false);
 
     const enableSidebar = frontmatter.path == '/learn/' || (frontmatter.path != '/learn/' && (frontmatter.sidemenu === "true")) ? true : false;
-    console.log(enableSidebar);
 
     return (
 
         <Layout footerBoxes={FooterBoxes}>
             <Helmet>
                 <body className="resources-body" />
+                <title>Celestia - {frontmatter.title}</title>
             </Helmet>
         <div className="resources-page">
 
@@ -110,12 +109,10 @@ export default function Template({
                                 </div>
                             </div>}
                             <div className={`col-12 ${enableSidebar ? 'col-lg-8 ps-lg-5' : 'col-lg-12'}`}>
-
                                 <div
                                     className="blog-post-content"
                                     dangerouslySetInnerHTML={{ __html: html }}
                                 />
-
 
                                 {data.markdownRemark.frontmatter.edit && <a href={data.markdownRemark.frontmatter.edit} className={'d-lg-none suggest-button pl-0 ps-lg-4'} target={'_blank'} rel={'noreferrer'}>
                                     <i className={'icon-edit'}/>SUGGEST AN EDIT
@@ -174,6 +171,7 @@ export const pageQuery = graphql`
       id
       headings {
         value
+        id
         depth
       }
       frontmatter {
