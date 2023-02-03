@@ -68,7 +68,7 @@ class IndexPage extends React.Component {
                                   <div className={'col-auto'}>
                                   <a href="https://celestia.org/learn/" target={'_blank'}>
                                         <button className={'button button-simple button-internal'} role={'button'} tabIndex={0} id={'developer'}>Learn more</button>
-                                  </a>                                  
+                                  </a>
                                 </div>
                               </div>
                           </section>
@@ -77,12 +77,14 @@ class IndexPage extends React.Component {
                           <section className={'roadmap-section'}>
                               <h2 className={'with-decor pb-5'}>Roadmap</h2>
 
-                              <ul className={'roadmap-items'}>
-                                  { roadmaps && roadmaps.map(function(roadmap,index){
-                                      return <RoadmapItem status={roadmap.status} key={roadmap.id} title={roadmap.title} text={roadmap.text}/>
-                                  })}
-                              </ul>
-                              <div className={'clear'}/>
+                              <div className={'roadmap-container'}>
+                                  <ul className={'roadmap-items'}>
+                                      { roadmaps && roadmaps.map(function(roadmap,index){
+                                          return <RoadmapItem status={roadmap.status} key={roadmap.id} title={roadmap.title} text={roadmap.text}/>
+                                      })}
+                                  </ul>
+                                  <div className={'clear'}/>
+                              </div>
                           </section>
 
                           <div className={'anchor'} id={'waitlist'}/>
