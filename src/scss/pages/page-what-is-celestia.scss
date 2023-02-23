@@ -1,0 +1,487 @@
+.what-is-celestia {
+	.lead-text {
+		font-family: $inter;
+		font-size: 18px;
+		color: #000000;
+		letter-spacing: -0.1px;
+		line-height: 27px;
+		width: 80%;
+		max-width: 840px;
+		margin-bottom: 50px;
+
+		@include media-breakpoint-down(sm) {
+			font-size: 15px;
+			line-height: 23px;
+			width: 100%;
+			margin-bottom: 25px;
+		}
+	}
+
+	.card-section {
+		background-color: rgba(106, 37, 215, 0.05);
+		background-size: 45%;
+		border: 1px solid rgba(186, 186, 186, 0.2);
+		border-radius: 20px;
+		-webkit-backdrop-filter: blur(50px);
+		backdrop-filter: blur(50px);
+		overflow: hidden;
+		padding: 0;
+		margin: 0 0 120px 0;
+		@include media-breakpoint-down(lg) {
+			margin-bottom: 64px;
+		}
+		.text-box {
+			// max-width: 630px;
+			padding: 96px 20px 96px 70px;
+			@include media-breakpoint-down(lg) {
+				padding: 50px 40px 50px 50px;
+				max-width: 100%;
+			}
+			@include media-breakpoint-down(sm) {
+				padding: 35px;
+			}
+			.subtitle {
+				font-family: $inter;
+				font-size: 24px;
+				font-weight: 600;
+				color: #000000;
+				letter-spacing: -0.15px;
+				line-height: 32px;
+				margin-bottom: 8px;
+				@include media-breakpoint-down(sm) {
+					font-size: 18px;
+					line-height: 20px;
+				}
+			}
+			p {
+				font-size: 18px;
+				line-height: 27px;
+				font-weight: 500;
+				color: #000000;
+				font-family: $inter;
+				margin-bottom: 56px;
+				&:last-of-type {
+					margin-bottom: 0px;
+				}
+				@include media-breakpoint-down(sm) {
+					font-size: 15px;
+					line-height: 23px;
+				}
+			}
+		}
+		.image-box--cover {
+			height: inherit;
+			background-repeat: no-repeat;
+			background-image: url(../images/what-is-celestia/celestia-modular-infographics.png);
+			background-position: 92% 70%;
+			background-size: 90%;
+			@include media-breakpoint-down(xxl) {
+				height: 470px;
+				background-position: 100% 65%;
+				background-size: 95%;
+			}
+			@include media-breakpoint-down(xl) {
+				height: 470px;
+				background-position: 100% 110%;
+				background-size: 95%;
+			}
+			@include media-breakpoint-down(lg) {
+				height: 650px;
+				background-position: 92% 100%;
+				background-size: 85%;
+			}
+			@include media-breakpoint-down(md) {
+				height: 500px;
+				background-position: 80% 100%;
+				background-size: 90%;
+			}
+			@include media-breakpoint-down(sm) {
+				background-position: -30% 100%;
+				background-size: 120%;
+				height: 400px;
+			}
+		}
+	}
+
+	.modular-blockchain-section {
+		margin-bottom: 120px;
+		padding: 0;
+		@include media-breakpoint-down(lg) {
+			margin-bottom: 80px;
+		}
+		.image-box--modular {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: inherit;
+			padding: 0 47px;
+			.image-wrapper {
+				width: 100%;
+				height: 100%;
+				max-width: 524px;
+			}
+			@include media-breakpoint-down(lg) {
+				background-position: 50%;
+				padding: 0 16px;
+				.image-wrapper {
+					width: 100%;
+					max-width: 600px;
+				}
+			}
+		}
+	}
+
+	.how-different-section {
+		margin-bottom: 200px;
+		padding: 0;
+		@include media-breakpoint-down(lg) {
+			margin-bottom: 64px;
+		}
+		.image-box--different {
+			height: inherit;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 0 47px;
+			.image-wrapper {
+				width: 100%;
+				height: 100%;
+				max-width: 420px;
+			}
+			@include media-breakpoint-down(lg) {
+				background-position: 50%;
+				width: 100vw;
+				padding: 12px;
+				.image-wrapper {
+					width: 100%;
+					max-width: 450px;
+				}
+			}
+		}
+	}
+
+	.good-analogy-section {
+		margin-bottom: 170px;
+		padding: 0;
+		@include media-breakpoint-down(lg) {
+			margin-bottom: 50px;
+		}
+		.image-box--analogy {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: inherit;
+			padding: 0 47px;
+			@include media-breakpoint-down(lg) {
+				background-position: 50%;
+				padding: 0 30px;
+				.image-wrapper {
+					width: 100%;
+					height: 100%;
+					max-width: 450px;
+				}
+			}
+		}
+	}
+
+	.why-use-section {
+		background-color: #fcfaff;
+		padding: 80px 0 80px 0;
+		@include media-breakpoint-down(lg) {
+			padding: 50px 0 50px 0;
+		}
+		.text-box {
+			@include media-breakpoint-down(lg) {
+				padding: 0px;
+			}
+		}
+		.text-box .title {
+			margin: 0;
+		}
+		.why-use-card {
+			height: 100%;
+			background: rgba(255, 255, 255, 0.35);
+			-webkit-backdrop-filter: blur(45px);
+			backdrop-filter: blur(35px);
+			border: 1px solid #e9e5f0;
+			border-radius: 15px;
+			padding: 35px;
+			transition: background-color ease-in-out 200ms;
+			&:hover {
+				background: #ffffff;
+			}
+			@include media-breakpoint-down(md) {
+				background: #ffffff;
+			}
+		}
+		.why-use-title {
+			font-family: $inter;
+			font-size: 20px;
+			line-height: 20px;
+			color: #000000;
+			letter-spacing: -0.3px;
+			font-weight: 600;
+		}
+		.why-use-text {
+			font-family: $inter;
+			font-size: 15px;
+			line-height: 23px;
+			color: #414141;
+			letter-spacing: -0.1px;
+		}
+		.col-z-index {
+			z-index: 1;
+		}
+
+		.image-box--why {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: inherit;
+			z-index: 0;
+			@include media-breakpoint-down(md) {
+				margin-bottom: 40px;
+			}
+			.gatsby-image-wrapper {
+				height: 82%;
+				transform: translateX(-7%) scale(.96);
+				overflow: visible;
+				@include media-breakpoint-down(xl) {
+					transform: translateX(-15%);
+					width: 125%;
+				}
+				@include media-breakpoint-down(lg) {
+					transform: translateX(-32%);
+					width: 120%;
+				}
+				@include media-breakpoint-down(md) {
+					height: 100%;
+					transform: translateX(0);
+					width: 100%;
+					margin-right: 20px;
+				}
+				img {
+					object-position: right;
+					@include media-breakpoint-down(xl) {
+						width: 120%;
+					}
+					@include media-breakpoint-down(lg) {
+						width: 140%;
+					}
+					@include media-breakpoint-down(md) {
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+
+	.data-availability-section {
+		margin-bottom: 120px;
+		padding: 120px 0 0;
+		@include media-breakpoint-down(lg) {
+			padding: 70px 0 0;
+			margin-bottom: 80px;
+		}
+		.image-box--availability {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: inherit;
+			padding: 0 47px;
+			.image-wrapper {
+				width: 100%;
+				height: 100%;
+				max-width: 420px;
+			}
+			@include media-breakpoint-down(lg) {
+				background-position: 50%;
+				padding: 0 30px;
+				.image-wrapper {
+					width: 90%;
+					max-width: 450px;
+				}
+			}
+		}
+	}
+
+	.rollups-section {
+		margin-bottom: 120px;
+		padding: 0;
+		@include media-breakpoint-down(lg) {
+			margin-bottom: 80px;
+		}
+		.image-box--rollups {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: inherit;
+			padding: 0 47px;
+			@include media-breakpoint-down(lg) {
+				background-position: 50%;
+				padding: 0 12px;
+				.image-wrapper {
+					width: 100%;
+					height: 100%;
+					max-width: 500px;
+				}
+			}
+		}
+	}
+
+	.modularism-section {
+		margin-bottom: 120px;
+		padding: 0;
+		@include media-breakpoint-down(lg) {
+			margin-bottom: 100px;
+		}
+		.image-box--modularism {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: inherit;
+			padding: 0 47px;
+			@include media-breakpoint-down(lg) {
+				background-position: 50%;
+				padding: 0px;
+				.image-wrapper {
+					width: 100%;
+					height: 100%;
+					max-width: 500px;
+					transform: scale(1.1);
+				}
+			}
+		}
+	}
+
+	.social-consensus {
+		margin-bottom: 120px;
+		padding: 0;
+		@include media-breakpoint-down(lg) {
+			margin-bottom: 80px;
+		}
+		.text-box {
+			@include media-breakpoint-down(lg) {
+				padding: 0px 12px 75px;
+			}
+		}
+		.image-box--consensus {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: inherit;
+			padding: 0 47px;
+			@include media-breakpoint-down(lg) {
+				background-position: 50%;
+				padding: 0px;
+				.image-wrapper {
+					width: 90%;
+					height: 100%;
+					max-width: 500px;
+				}
+			}
+		}
+	}
+
+	.resources-section {
+		background-color: #fcfaff;
+		padding: 70px 0 50px 0;
+		@include media-breakpoint-down(md) {
+			padding: 50px 0 50px 0;
+		}
+
+		.text-box {
+			@include media-breakpoint-down(md) {
+				padding: 0;
+			}
+		}
+
+		.resource-card {
+			height: 100%;
+			background-color: #ffffff;
+			border-radius: 15px;
+			border: 1px solid #e9e5f0;
+			padding: 35px;
+		}
+		.card-title {
+			font-family: $inter;
+			font-size: 24px;
+			line-height: 24px;
+			color: #000000;
+			letter-spacing: -0.36px;
+			font-weight: 800;
+			margin-bottom: 12px;
+		}
+		.card-text {
+			font-family: $inter;
+			font-size: 14px;
+			color: #414141;
+			letter-spacing: -0.08px;
+			line-height: 23px;
+		}
+		.card-link {
+			font-family: $ruberoid;
+			font-size: 15px;
+			color: #000000;
+			letter-spacing: 0;
+			line-height: 15px;
+			font-weight: 800;
+		}
+	}
+
+	.text-box {
+		padding: 0px 50px 0px 70px;
+		@include media-breakpoint-down(lg) {
+			padding: 0px 30px 50px;
+		}
+		@include media-breakpoint-down(sm) {
+			padding: 0px 12px 50px;
+		}
+		.title {
+			font-family: $ruberoid;
+			font-size: 36px;
+			letter-spacing: -1px;
+			line-height: 38px;
+			font-weight: 800;
+			color: #000000;
+			letter-spacing: -0.15px;
+			margin-bottom: 20px;
+			@include media-breakpoint-down(sm) {
+				font-size: 32px;
+				letter-spacing: -0.62px;
+				line-height: 40px;
+			}
+		}
+
+		p {
+			font-family: $inter;
+			font-size: 18px;
+			color: #414141;
+			letter-spacing: -0.1px;
+			line-height: 27px;
+			margin-bottom: 24px;
+			@include media-breakpoint-down(sm) {
+				font-size: 15px;
+				width: 100%;
+				margin-bottom: 25px;
+			}
+			&:last-of-type {
+				margin-bottom: 0px;
+			}
+			@include media-breakpoint-down(sm) {
+				font-size: 15px;
+				line-height: 23px;
+			}
+			& strong {
+				font-weight: 500;
+			}
+		}
+	}
+}
+
+.what-is-celestia + footer {
+	padding-top: 80px;
+	@include media-breakpoint-down(md) {
+		padding-top: 20px;
+	}
+}
