@@ -273,19 +273,6 @@ export const teamMembers = [
             linkedin : '',
          }
      },{
-        id : 25,
-        name : 'Rahul Ghangas',
-        title: 'Software Engineer',
-        text: 'Former backend engineer at Ren',
-        image: 'team/RahulGhangas.png',
-        socials: {
-            twitter : '',
-            discord : '',
-            github : 'https://github.com/rahulghangas',
-            email : '',
-            linkedin : '',
-         }
-     },{
         id : 26,
         name : 'Mojtaba Eskandari',
         title: 'Software Engineer',
@@ -490,6 +477,19 @@ export const teamMembers = [
             twitter : '',
             discord : '',
             github : '',
+            email : '',
+            linkedin : '',
+         }
+     },{
+        id : 42,
+        name : 'Samuel Enderwitz',
+        title: 'DevOps Engineer',
+        text: 'DevOps enthusiast',
+        image: 'team/SamuelEnderwitz.png',
+        socials: {
+            twitter : 'https://twitter.com/smuueth',
+            discord : '',
+            github : 'https://github.com/smuu',
             email : '',
             linkedin : '',
          }
