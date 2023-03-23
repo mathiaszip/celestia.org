@@ -1,79 +1,207 @@
 export const ecosystemCategories = [
     {
         id : 1,
-        name : 'Cross chain',
+        name : 'Rollups as a service',
         ecosystems: [
             {
-                title: 'CNS',
-                text: '(in general use) a complex network or interconnected system. add 3 line description max.',
-                image: 'ecosystem/cns.png',
-                url: '/'
+                title: 'Caldera',
+                text: '',
+                image: 'ecosystem/caldera.png',
+                url: 'https://www.caldera.xyz/'
+            },
+            {
+                title: 'Eclipse',
+                text: '',
+                image: 'ecosystem/eclipse.png',
+                url: 'https://www.eclipse.builders/'
             }
         ]
     },{
         id : 2,
-        name : 'MEV',
+        name : 'Sequencer as a service',
         ecosystems: [
             {
-                title: 'Skip',
-                text: '(in general use) a complex network or interconnected system. add 3 line description max.',
-                image: 'ecosystem/skip.png',
-                url: '/'
+                title: 'Saga',
+                text: '',
+                image: 'ecosystem/saga.png',
+                url: 'https://www.saga.xyz/'
             }
         ]
     },{
         id : 3,
-        name : 'Rollums as a service',
-    },{
-        id : 4,
-        name : 'Optimistic rollup',
-    },{
-        id : 5,
-        name : 'ZK Rollup',
+        name : 'Shared sequencer network',
         ecosystems: [
             {
-                title: 'Sovereing',
-                text: '(in general use) a complex network or interconnected system. add 3 line description max.',
+                title: 'Astria',
+                text: '',
+                image: 'ecosystem/astria.png',
+                url: 'https://astria.org/'
+            }
+        ]
+    },{
+        id : 4,
+        name : 'Settlement layer',
+        ecosystems: [
+             {
+                title: 'Dymension',
+                text: '',
+                image: 'ecosystem/dymension.png',
+                url: 'https://dymension.xyz/'
+            },
+            {
+                title: 'Neutron',
+                text: '',
+                image: 'ecosystem/neutron.png',
+                url: 'https://neutron.org/'
+            }
+        ]
+    },{
+        id : 5,
+        name : 'Rollup framework',
+        ecosystems: [
+            {
+                title: 'Rollkit',
+                text: '',
+                image: 'ecosystem/rollkit.png',
+                url: 'https://www.rollkit.dev/'
+            },
+            {
+                title: 'Sovereign',
+                text: '',
                 image: 'ecosystem/sovereign.png',
-                url: '/',
+                url: 'https://sovereign.xyz/'
             }
         ]
     },{
         id : 6,
-        name : 'Infrastructure',
-    },{
-        id : 7,
-        name : 'Wallet',
-    },{
-        id : 8,
-        name : 'Block Explorer',
-    },{
-        id : 9,
-        name : 'DEFI',
-    },{
-        id : 10,
-        name : 'Gaming',
-    },{
-        id : 11,
-        name : 'Bridge',
+        name : 'Cross chain',
         ecosystems: [
             {
+                title: 'Axelar',
+                text: '',
+                image: 'ecosystem/axelar.png',
+                url: 'https://axelar.network/'
+            },
+            {
+                title: 'Hyperlane',
+                text: '',
+                image: 'ecosystem/hyperlane.png',
+                url: 'https://www.hyperlane.xyz/'
+            },
+            {
+                title: 'Orb',
+                text: '',
+                image: 'ecosystem/orb.png',
+                url: 'https://www.orblabs.xyz/'
+            },
+            {
                 title: 'Polymer',
-                text: '(in general use) a complex network or interconnected system. add 3 line description max.',
+                text: '',
                 image: 'ecosystem/polymer.png',
-                url: '/'
+                url: 'https://www.polymerlabs.org/'
             },
             {
                 title: 'Squid',
-                text: '(in general use) a complex network or interconnected system. add 3 line description max.',
+                text: '',
                 image: 'ecosystem/squid.png',
-                url: '/'
+                url: 'https://www.squidrouter.com/'
+            }
+        ]
+    },{
+        id : 7,
+        name : 'Wallet',
+        ecosystems: [
+            {
+                title: 'Cosmostation',
+                text: '',
+                image: 'ecosystem/cosmostation.png',
+                url: 'https://www.cosmostation.io/'
             },
             {
-                title: 'Axelar',
-                text: '(in general use) a complex network or interconnected system. add 3 line description max.',
-                image: 'ecosystem/axelar.png',
-                url: '/'
+                title: 'Keplr',
+                text: '',
+                image: 'ecosystem/keplr.png',
+                url: 'https://www.keplr.app/'
+            },
+            {
+                title: 'Leap wallet',
+                text: '',
+                image: 'ecosystem/leap-wallet.png',
+                url: 'https://www.leapwallet.io/'
+            }
+        ]
+    },{
+        id : 8,
+        name : 'DeFi',
+        ecosystems: [
+            {
+                title: 'Crescent',
+                text: '',
+                image: 'ecosystem/crescent.png',
+                url: 'https://crescent.network/',
+            },
+            {
+                title: 'Duality',
+                text: '',
+                image: 'ecosystem/duality.png',
+                url: 'https://duality.xyz/',
+            }
+        ]
+    },{
+        id : 9,
+        name : 'Gaming',
+        ecosystems: [
+            {
+                title: 'Argus',
+                text: '',
+                image: 'ecosystem/argus.png',
+                url: 'https://argus.gg/'
+            },
+            {
+                title: 'Worlds',
+                text: '',
+                image: 'ecosystem/worlds.png',
+                url: 'https://www.worlds.org/'
+            }
+        ]
+    },{
+        id : 10,
+        name : 'Infrastructure',
+        ecosystems: [
+            {
+                title: 'Fairblock',
+                text: '',
+                image: 'ecosystem/fairblock.png',
+                url: 'https://twitter.com/Fair_Block'
+            },
+            {
+                title: 'PK Lab',
+                text: '',
+                image: 'ecosystem/pklab.png',
+                url: 'https://bakingbad.dev/'
+            },
+            {
+                title: 'Modular cloud',
+                text: '',
+                image: 'ecosystem/modular-cloud.png',
+                url: 'https://explorer.modular.cloud/'
+            },
+            {
+                title: 'Range',
+                text: '',
+                image: 'ecosystem/range.png',
+                url: 'https://www.range.org/'
+            }
+        ]
+    },{
+        id : 11,
+        name : 'MEV',
+        ecosystems: [
+            {
+                title: 'Skip',
+                text: '',
+                image: 'ecosystem/skip.png',
+                url: 'https://skip.money/'
             }
         ]
     }

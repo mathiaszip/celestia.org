@@ -13,7 +13,7 @@ const navigation = [
             {
                 text: "Build on testnet",
                 subtext: "Testnet",
-                url: "https://docs.celestia.org/nodes/mocha-testnet",
+                url: "https://docs.celestia.org/",
                 icon: "menu/devnet.svg",
                 type: 'external'
             },
@@ -32,7 +32,7 @@ const navigation = [
                 type: 'external'
             },
             {
-                text: "Read the original research paper",
+                text: "Read the LazyLedger whitepaper",
                 subtext: "Research paper",
                 url: "https://arxiv.org/pdf/1905.09274.pdf",
                 icon: "menu/research.svg",
@@ -148,6 +148,10 @@ const navigation = [
                 type: 'external'
             }
         ]
+    },{
+        text: "Ecosystem",
+        url: "/ecosystem/",
+        type: 'internal'
     },{
         text: "Team",
         url: "",
