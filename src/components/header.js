@@ -7,46 +7,6 @@ import Image from "./imageComponent";
 
 const navigation = [
     {
-        text: "Developers",
-        url: "",
-        submenus: [
-            {
-                text: "Build on testnet",
-                subtext: "Testnet",
-                url: "https://docs.celestia.org/",
-                icon: "menu/devnet.svg",
-                type: 'external'
-            },
-            {
-                text: "Read our docs",
-                subtext: "Celestia Docs",
-                url: "https://docs.celestia.org/",
-                icon: "menu/documentation.svg",
-                type: 'external'
-            },
-            {
-                text: "View our GitHub repos",
-                subtext: "GitHub repositories",
-                url: "https://github.com/celestiaorg",
-                icon: "menu/github.svg",
-                type: 'external'
-            },
-            {
-                text: "Read the LazyLedger whitepaper",
-                subtext: "Research paper",
-                url: "https://arxiv.org/pdf/1905.09274.pdf",
-                icon: "menu/research.svg",
-                type: 'external'
-            },
-            {
-                text: "Read the contributors guide",
-                subtext: "Contribute",
-                url: "/resources/contribute/",
-                icon: "menu/briefcase.svg",
-                type: 'internal'
-            },
-        ]
-    },{
         text: "Learn",
         url: "/resources/",
         type: 'internal',
@@ -64,6 +24,13 @@ const navigation = [
                 url: "/faq/",
                 icon: "menu/faq.svg",
                 type: 'internal'
+            },
+            {
+                text: "Read our blog",
+                subtext: "Celestia Blog",
+                url: "https://blog.celestia.org/",
+                icon: "menu/documentation.svg",
+                type: 'external'
             },
             {
                 text: "Technology",
@@ -102,28 +69,21 @@ const navigation = [
             }
         ]
     },{
-        text: "Community",
+        text: "Build",
         url: "",
         submenus: [
             {
-                text: "Join our Discord Channel",
-                subtext: "Discord",
-                url: "https://discord.com/invite/YsnTPcSfWQ",
-                icon: "menu/discord.svg",
+                text: "Build on testnet",
+                subtext: "Testnet",
+                url: "https://docs.celestia.org/",
+                icon: "menu/devnet.svg",
                 type: 'external'
             },
             {
-                text: "Join our Telegram group",
-                subtext: "Telegram",
-                url: "https://t.me/CelestiaCommunity",
-                icon: "menu/telegram.svg",
-                type: 'external'
-            },
-            {
-                text: "Follow us on twitter",
-                subtext: "Twitter",
-                url: "https://twitter.com/CelestiaOrg",
-                icon: "menu/twitter.svg",
+                text: "Read our docs",
+                subtext: "Celestia Docs",
+                url: "https://docs.celestia.org/",
+                icon: "menu/documentation.svg",
                 type: 'external'
             },
             {
@@ -134,47 +94,39 @@ const navigation = [
                 type: 'external'
             },
             {
-                text: "Watch our YouTube videos",
-                subtext: "YouTube",
-                url: "https://www.youtube.com/channel/UCLlvAEzXBFZ-P3zS6BF2Bjg",
-                icon: "menu/resources.svg",
+                text: "View our GitHub repos",
+                subtext: "GitHub repositories",
+                url: "https://github.com/celestiaorg",
+                icon: "menu/github.svg",
                 type: 'external'
             },
             {
-                text: "Join our subreddit",
-                subtext: "Reddit",
-                url: "https://www.reddit.com/r/CelestiaNetwork/",
-                icon: "menu/reddit.svg",
+                text: "Read the LazyLedger whitepaper",
+                subtext: "Research paper",
+                url: "https://arxiv.org/pdf/1905.09274.pdf",
+                icon: "menu/research.svg",
                 type: 'external'
-            }
+            },
         ]
     },{
-        text: "Ecosystem",
-        url: "/ecosystem/",
-        type: 'internal'
-    },{
-        text: "Team",
+        text: "Explore",
         url: "",
         submenus: [
             {
-                text: "Meet the team",
-                subtext: "Team",
-                url: "/team/",
-                icon: "menu/team.svg",
+                text: "Join the community",
+                subtext: "Social channels",
+                url: "/#join-our-global-community",
+                icon: "menu/forum.svg",
                 type: 'internal'
             },
             {
-                text: "View our job postings",
-                subtext: "Careers",
-                url: "/careers/",
+                text: "Explore the ecosystem",
+                subtext: "Celestia ecosystem",
+                url: "/ecosystem/",
                 icon: "menu/careers.svg",
                 type: 'internal'
-            }
+            },
         ]
-    },{
-        text: "Blog",
-        url: "https://blog.celestia.org",
-        type: 'external'
     },
 ]
 
@@ -210,73 +162,73 @@ class Header extends React.Component {
     render() {
         return (
             <>
-            <header id={'header'}>
-                <Helmet>
-                    <title>Celestia</title>
-                </Helmet>
-                <div className={'blurry'}/>
-                <div className={'container'}>
-                    <button id={'hamburger'} className="hamburger hamburger--slider" type="button" onClick={this.toggleMenu}>
+                <header id={'header'}>
+                    <Helmet>
+                        <title>Celestia</title>
+                    </Helmet>
+                    <div className={'blurry'}/>
+                    <div className={'container'}>
+                        <button id={'hamburger'} className="hamburger hamburger--slider" type="button" onClick={this.toggleMenu}>
                       <span className="hamburger-box">
                         <span className="hamburger-inner"/>
                       </span>
-                    </button>
-                    <div className={'logo'}>
-                        <Link to="/"><img src={logo} alt="Celestia"/></Link>
-                    </div>
-                    <nav>
-                        <ul>
-                            {navigation.map((link, index) => (
-                                <li key={index}>
-                                    {link.submenus ? <div className={'hasSubmenu'}>{link.text} <i className={'icon-dropdown'}/></div> : link.type === 'external' ?
-                                        <a href={link.url} target={'_blank'} rel={'noreferrer'}>{link.text}</a> : <Link to={`${link.url}`} activeClassName="active">{link.text} {link.submenus && <i className={'icon-dropdown'}/>}</Link>}
-                                    {link.submenus &&
+                        </button>
+                        <div className={'logo'}>
+                            <Link to="/"><img src={logo} alt="Celestia"/></Link>
+                        </div>
+                        <nav>
+                            <ul>
+                                {navigation.map((link, index) => (
+                                    <li key={index}>
+                                        {link.submenus ? <div className={'hasSubmenu'}>{link.text} <i className={'icon-dropdown'}/></div> : link.type === 'external' ?
+                                            <a href={link.url} target={'_blank'} rel={'noreferrer'}>{link.text}</a> : <Link to={`${link.url}`} activeClassName="active">{link.text} {link.submenus && <i className={'icon-dropdown'}/>}</Link>}
+                                        {link.submenus &&
                                         <div className={'submenu'}>
                                             <ul>
                                                 {link.submenus.map((submenu, index) => (
                                                     <li key={index}>
                                                         {submenu.type === 'external' ?
                                                             (<a href={submenu.url} target={'_blank'} rel="noreferrer">
-                                                            <div className={'row d-table w-100'}>
-                                                                <div className={'col-2 align-middle d-table-cell'}>
-                                                                    <div className={'icon'}>
-                                                                        <Image alt={submenu.text} filename={submenu.icon} />
+                                                                <div className={'row d-table w-100'}>
+                                                                    <div className={'col-2 align-middle d-table-cell'}>
+                                                                        <div className={'icon'}>
+                                                                            <Image alt={submenu.text} filename={submenu.icon} />
+                                                                        </div>
+                                                                    </div>
+                                                                    <div className={'col-10 align-middle d-table-cell'}>
+                                                                        <div className={'subtitle'}>{submenu.subtext}</div>
+                                                                        <div className={'title'}>{submenu.text}</div>
                                                                     </div>
                                                                 </div>
-                                                                <div className={'col-10 align-middle d-table-cell'}>
-                                                                    <div className={'subtitle'}>{submenu.subtext}</div>
-                                                                    <div className={'title'}>{submenu.text}</div>
-                                                                </div>
-                                                            </div>
-                                                        </a>)
+                                                            </a>)
                                                             :
                                                             (<Link to={submenu.url} >
-                                                            <div className={'row d-table w-100'}>
-                                                                <div className={'col-2 align-middle d-table-cell'}>
-                                                                    <div className={'icon'}>
-                                                                        <Image alt={submenu.text} filename={submenu.icon} />
+                                                                <div className={'row d-table w-100'}>
+                                                                    <div className={'col-2 align-middle d-table-cell'}>
+                                                                        <div className={'icon'}>
+                                                                            <Image alt={submenu.text} filename={submenu.icon} />
+                                                                        </div>
+                                                                    </div>
+                                                                    <div className={'col-10 align-middle d-table-cell'}>
+                                                                        <div className={'subtitle'}>{submenu.subtext}</div>
+                                                                        <div className={'title'}>{submenu.text}</div>
                                                                     </div>
                                                                 </div>
-                                                                <div className={'col-10 align-middle d-table-cell'}>
-                                                                    <div className={'subtitle'}>{submenu.subtext}</div>
-                                                                    <div className={'title'}>{submenu.text}</div>
-                                                                </div>
-                                                            </div>
-                                                        </Link>)}
+                                                            </Link>)}
                                                     </li>
                                                 ))}
                                             </ul>
                                         </div>
-                                    }
+                                        }
 
-                                </li>
-                            ))}
-                        </ul>
-                    </nav>
-                    <div className={'clear'}/>
-                </div>
-            </header>
-                </>
+                                    </li>
+                                ))}
+                            </ul>
+                        </nav>
+                        <div className={'clear'}/>
+                    </div>
+                </header>
+            </>
         );
     }
 }
