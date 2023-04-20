@@ -7,18 +7,18 @@ import { connect } from "../datas/developer-portal/connect";
 import { concepts } from "../datas/developer-portal/concepts";
 import { faqs } from "../datas/developer-portal/faq";
 import { community } from "../datas/developer-portal/community";
-import { FooterBoxes } from "../datas/developer-portal//content";
+import { FooterBoxes } from "../datas/developer-portal/content";
 import Layout from "../components/layout";
 import { Helmet } from "react-helmet";
 import IconCard from "../components/modules/icon-card";
 import Button from "../components/buttons/button";
 import Faq from "../components/modules/faq";
 
-const EcosystemPage = () => {
+const DevPortal = () => {
 	return (
 		<Layout footerBoxes={FooterBoxes}>
 			<Helmet>
-				<title>Celestia - Ecosystem</title>
+				<title>Celestia - Developer Portal</title>
 			</Helmet>
 			<div className={"developer-portal"}>
 				<main>
@@ -118,4 +118,4 @@ const EcosystemPage = () => {
 	);
 };
 
-export default EcosystemPage;
+export default DevPortal;
