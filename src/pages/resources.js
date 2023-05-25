@@ -19,7 +19,7 @@ import {communityposts} from "../datas/resources/community-posts";
 import Carousel from "react-multi-carousel";
 import Layout from "../components/layout";
 import {Helmet} from "react-helmet";
-import {content} from "../datas/technology/content";
+// import {content} from "../datas/technology/content";
 
 const responsive = {
     desktop: {
