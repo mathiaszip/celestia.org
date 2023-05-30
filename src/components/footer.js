@@ -183,7 +183,7 @@ class Footer extends React.Component {
 					<div className={"row justify-content-center"}>
 						<div className={"col col-12 col-sm-6 text-center"}>
 							<p className="copyright">
-								Made with  <i className={"icon-heart"} /> by <a href='https://designatives.com'>Designatives</a>
+								Made with <i className={"icon-heart"} /> by <a href='https://designatives.com'>Designatives</a>
 							</p>
 						</div>
 					</div>
