@@ -1,5 +1,24 @@
 .community {
 	position: relative;
+	background: url(../images/BG/technology.png) no-repeat scroll top 400px right transparent;
+	background-size: 600px;
+
+	@include media-breakpoint-down(xl) {
+		background-position: top 520px right;
+		background-size: 600px;
+	}
+	@include media-breakpoint-down(lg) {
+		background-position: top 250px right;
+		background-size: 800px;
+	}
+	@include media-breakpoint-down(md) {
+		background-position: top 600px right;
+		background-size: 600px;
+	}
+	@include media-breakpoint-down(sm) {
+		background-position: -100px 250px;
+		background-size: 800px;
+	}
 	&:before {
 		background: url(../images/community/community.png) no-repeat scroll top right transparent;
 		background-size: contain;
@@ -10,7 +29,7 @@
 		content: "";
 		width: 560px;
 		height: 560px;
-		z-index: -1;
+		z-index: 0;
 
 		@include media-breakpoint-down(xl) {
 			width: 480px;
@@ -37,6 +56,25 @@
 
 	main {
 		padding-top: 100px;
+		background: url(../images/BG/home.png) no-repeat scroll top 1000px left transparent;
+		background-size: 600px;
+
+		@include media-breakpoint-down(xl) {
+			background-position: top 1000px left;
+			background-size: 600px;
+		}
+		@include media-breakpoint-down(lg) {
+			background-position: top 1600px left;
+			background-size: 600px;
+		}
+		@include media-breakpoint-down(md) {
+			background-position: top 1700px left;
+			background-size: 800px;
+		}
+		@include media-breakpoint-down(sm) {
+			background-position: top 1800px left;
+			background-size: 600px;
+		}
 	}
 	section {
 		padding-top: 50px;
