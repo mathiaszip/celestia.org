@@ -14,21 +14,16 @@ export const ecosystemCategories = [
                 text: '',
                 image: 'ecosystem/eclipse.png',
                 url: 'https://www.eclipse.builders/'
+            },
+            {
+                title: 'Vistara',
+                text: '',
+                image: 'ecosystem/vistara.png',
+                url: 'https://docs.vistara.dev/'
             }
         ]
     },{
         id : 2,
-        name : 'Sequencer as a service',
-        ecosystems: [
-            {
-                title: 'Saga',
-                text: '',
-                image: 'ecosystem/saga.png',
-                url: 'https://www.saga.xyz/'
-            }
-        ]
-    },{
-        id : 3,
         name : 'Shared sequencer network',
         ecosystems: [
             {
@@ -36,10 +31,22 @@ export const ecosystemCategories = [
                 text: '',
                 image: 'ecosystem/astria.png',
                 url: 'https://astria.org/'
+            },
+            {
+                title: 'Radius',
+                text: '',
+                image: 'ecosystem/radius.png',
+                url: 'https://www.theradius.xyz/'
+            },
+            {
+                title: 'Fairblock',
+                text: '',
+                image: 'ecosystem/fairblock.png',
+                url: 'https://twitter.com/Fair_Block'
             }
         ]
     },{
-        id : 4,
+        id : 3,
         name : 'Settlement layer',
         ecosystems: [
              {
@@ -53,10 +60,28 @@ export const ecosystemCategories = [
                 text: '',
                 image: 'ecosystem/neutron.png',
                 url: 'https://neutron.org/'
+            },
+            {
+                title: 'Berachain',
+                text: '',
+                image: 'ecosystem/berachain.png',
+                url: 'https://berachain.com/'
+            },
+            {
+                title: 'Layer N',
+                text: '',
+                image: 'ecosystem/layern.png',
+                url: 'https://www.layern.com/'
+            },
+            {
+                title: 'Saga',
+                text: '',
+                image: 'ecosystem/saga.png',
+                url: 'https://www.saga.xyz/'
             }
         ]
     },{
-        id : 5,
+        id : 4,
         name : 'Rollup framework',
         ecosystems: [
             {
@@ -70,6 +95,41 @@ export const ecosystemCategories = [
                 text: '',
                 image: 'ecosystem/sovereign.png',
                 url: 'https://sovereign.xyz/'
+            },
+            {
+                title: 'OP Stack',
+                text: '',
+                image: 'ecosystem/optimism.png',
+                url: 'https://www.optimism.io/'
+            },
+            {
+                title: 'Stackr',
+                text: '',
+                image: 'ecosystem/stackr.png',
+                url: 'https://www.stackrlabs.xyz/'
+            }
+        ]
+    },{
+        id : 5,
+        name : 'Virtual machine',
+        ecosystems: [
+            {
+                title: 'Risc Zero',
+                text: '',
+                image: 'ecosystem/risczero.png',
+                url: 'https://www.risczero.com/'
+            },
+            {
+                title: 'Polaris',
+                text: '',
+                image: 'ecosystem/berachain.png',
+                url: 'https://berachain.com/'
+            },
+            {
+                title: 'CosmWasm',
+                text: '',
+                image: 'ecosystem/cosmwasm.png',
+                url: 'https://cosmwasm.com/'
             }
         ]
     },{
@@ -105,6 +165,12 @@ export const ecosystemCategories = [
                 text: '',
                 image: 'ecosystem/squid.png',
                 url: 'https://www.squidrouter.com/'
+            },
+            {
+                title: 'Skip',
+                text: '',
+                image: 'ecosystem/skip.png',
+                url: 'https://skip.money/'
             }
         ]
     },{
@@ -145,6 +211,18 @@ export const ecosystemCategories = [
                 text: '',
                 image: 'ecosystem/duality.png',
                 url: 'https://duality.xyz/',
+            },
+            {
+                title: 'Catalyst',
+                text: '',
+                image: 'ecosystem/catalyst.png',
+                url: 'https://catalyst.exchange/',
+            },
+            {
+                title: 'Shogun',
+                text: '',
+                image: 'ecosystem/shogun.png',
+                url: 'https://twitter.com/shogunfi',
             }
         ]
     },{
@@ -162,18 +240,24 @@ export const ecosystemCategories = [
                 text: '',
                 image: 'ecosystem/worlds.png',
                 url: 'https://www.worlds.org/'
+            },
+            {
+                title: 'Bullieverse',
+                text: '',
+                image: 'ecosystem/bullieverse.png',
+                url: 'https://bullieverse.com/home'
+            },
+            {
+                title: 'Aether Games',
+                text: '',
+                image: 'ecosystem/aethergames.png',
+                url: 'https://www.aethergames.io/'
             }
         ]
     },{
         id : 10,
         name : 'Infrastructure',
         ecosystems: [
-            {
-                title: 'Fairblock',
-                text: '',
-                image: 'ecosystem/fairblock.png',
-                url: 'https://twitter.com/Fair_Block'
-            },
             {
                 title: 'PK Lab',
                 text: '',
@@ -191,17 +275,12 @@ export const ecosystemCategories = [
                 text: '',
                 image: 'ecosystem/range.png',
                 url: 'https://www.range.org/'
-            }
-        ]
-    },{
-        id : 11,
-        name : 'MEV',
-        ecosystems: [
+            },
             {
-                title: 'Skip',
+                title: 'Noble',
                 text: '',
-                image: 'ecosystem/skip.png',
-                url: 'https://skip.money/'
+                image: 'ecosystem/noble.png',
+                url: 'https://nobleassets.xyz/',
             }
         ]
     }
