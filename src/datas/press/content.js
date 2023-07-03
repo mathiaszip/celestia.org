@@ -9,7 +9,7 @@ export const FooterBoxes = [
             type: 'simple'
         }
     },{
-        title: 'Build on testnet',
+        title: 'Build on our testnet',
         text: 'Join a growing modular ecosystem of developers building on testnet.',
         button: {
             text: 'Get started',
