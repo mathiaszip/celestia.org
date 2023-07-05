@@ -7,9 +7,8 @@ module.exports = {
   siteMetadata: {
     title: `The first modular blockchain network`,
     description: `Celestia is a modular consensus and data network, built to enable anyone to easily deploy their own blockchain with minimal overhead.`,
-    author: `Celestia Labs`,
+    author: `@CelestiaOrg`,
     // siteUrl: `https://celestia.org`,
-    // siteUrl: `https://celestia.surge.sh`,
     siteUrl: `https://dev.lazyledger.org`,
     image: `/celestia-default-og-image.jpg`,
   },
