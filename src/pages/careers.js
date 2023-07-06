@@ -6,7 +6,9 @@ import Button from "../components/buttons/button";
 import Perk from "../components/modules/perk";
 import Layout from "../components/layout";
 import {graphql, useStaticQuery} from "gatsby";
-import {Helmet} from "react-helmet";
+
+import { seoContent } from "../datas/careers/seoContent";
+import SEO from "../components/seo";
 
 const CareersPage = () => {
     const jobs = useStaticQuery(graphql`
@@ -41,9 +43,11 @@ const CareersPage = () => {
 
     return (
         <Layout footerBoxes={FooterBoxes}>
-            <Helmet>
-                <title>Celestia - {content.title}</title>
-            </Helmet>
+            <SEO
+				title={seoContent.title}
+				description={seoContent.description}
+				image={seoContent.image}
+			/>
             <div className={'careers-page'}>
                 <main>
                     <div className={'container'}>
