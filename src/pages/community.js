@@ -6,17 +6,21 @@ import { explore } from "../datas/community/explore";
 import { ecosystem } from "../datas/community/ecosystem";
 import { FooterBoxes } from "../datas/community/content";
 import Layout from "../components/layout";
-import { Helmet } from "react-helmet";
 import CommunityItem from "../components/modules/community-item";
 import Button from "../components/buttons/button";
 import Image from "../components/imageComponent";
 
+import { seoContent } from "../datas/community/seoContent";
+import SEO from "../components/seo";
+
 const Community = () => {
 	return (
 		<Layout footerBoxes={FooterBoxes}>
-			<Helmet>
-				<title>Celestia - Community</title>
-			</Helmet>
+			<SEO
+				title={seoContent.title}
+				description={seoContent.description}
+				image={seoContent.image}
+			/>
 			<div className={"community-page"}>
 				<main>
 					<section className='hero'>
@@ -73,14 +77,19 @@ const Community = () => {
 						<div className={"container"}>
 							<div className={"row justify-content-between align-items-center gx-5 gy-3"}>
 								<div className={"col-12 col-lg-6 col-xl-5 mb-4 mb-lg-0"}>
-									<div className="image-wrapper">
+									<div className='image-wrapper'>
 										<Image style={{ width: `100%` }} alt={ecosystem.title} filename={ecosystem.image} />
 									</div>
 								</div>
 								<div className={"col-12 col-lg-6 col-xl-6 "}>
 									<h2 className='title'>{ecosystem.title}</h2>
-									<p className="text">{ecosystem.text}</p>
-									<Button class={ecosystem.button.class} type={ecosystem.button.type} text={ecosystem.button.text} url={ecosystem.button.url} />
+									<p className='text'>{ecosystem.text}</p>
+									<Button
+										class={ecosystem.button.class}
+										type={ecosystem.button.type}
+										text={ecosystem.button.text}
+										url={ecosystem.button.url}
+									/>
 								</div>
 							</div>
 						</div>

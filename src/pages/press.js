@@ -3,15 +3,19 @@ import * as React from "react";
 import { pressData } from "../datas/press/press-data";
 import { FooterBoxes } from "../datas/press/content";
 import Layout from "../components/layout";
-import { Helmet } from "react-helmet";
 import PressItem from "../components/modules/press-item";
+
+import { seoContent } from "../datas/press/seoContent";
+import SEO from "../components/seo";
 
 const Press = () => {
 	return (
 		<Layout footerBoxes={FooterBoxes}>
-			<Helmet>
-				<title>Celestia - Press</title>
-			</Helmet>
+			<SEO
+				title={seoContent.title}
+				description={seoContent.description}
+				image={seoContent.image}
+			/>
 			<div className={"press"}>
 				<main>
 					<div className={"container"}>

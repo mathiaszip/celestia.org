@@ -3,14 +3,18 @@ import {FooterBoxes} from "../datas/faq/content";
 import {faqs} from "../datas/faq/faqs";
 import Faq from "../components/modules/faq";
 import Layout from "../components/layout";
-import {Helmet} from "react-helmet";
+
+import { seoContent } from "../datas/faq/seoContent";
+import SEO from "../components/seo";
 
 const TeamPage = () => {
     return (
         <Layout footerBoxes={FooterBoxes}>
-            <Helmet>
-                <title>Celestia - FAQ</title>
-            </Helmet>
+            <SEO
+				title={seoContent.title}
+				description={seoContent.description}
+				image={seoContent.image}
+			/>
             <div className={'faq-page'}>
                 <main>
                     <div className={'container'}>
