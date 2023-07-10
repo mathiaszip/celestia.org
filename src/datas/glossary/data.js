@@ -26,9 +26,17 @@ export const glossaries = [
                 title: 'Composability',
                 text: 'The ability for applications on a blockchain to read and write state to each other.',
             },{
+                url: 'consensus',
+                title: 'Consensus',
+                text: 'A function of modular blockchains where the ordering of transactions is agreed upon by a set of validators.',
+            },{
                 url: 'consensus-algorithm',
                 title: 'Consensus algorithm',
                 text: 'A consensus algorithm is a set of rules that blockchains use to determine how nodes produce new blocks and agree to finalize them.',
+            },{
+                url: 'consensus-layer',
+                title: 'Consensus layer',
+                text: 'A modular blockchain that provides transaction ordering for other modular blockchains, like rollups.',
             },{
                 url: 'cosmos-sdk',
                 title: 'Cosmos SDK',
@@ -42,6 +50,18 @@ export const glossaries = [
     },{
         'D':[
             {
+                url: 'da',
+                title: 'DA',
+                text: 'DA stands for Data Availability.',
+            },{
+                url: 'dac',
+                title: 'DAC',
+                text: 'DAC stands for Data Availability Committee.',
+            },{
+                url: 'das',
+                title: 'DAS',
+                text: 'DAS stands for Data Availability Sampling.',
+            },{
                 url: 'data-availability-sampling',
                 title: 'Data availability sampling',
                 text: 'A technique in which nodes can verify that data is available for a block without having to download the entire block, formerly known as data availability proofs.',
@@ -53,6 +73,10 @@ export const glossaries = [
                 url: 'data-availability-committee',
                 title: 'Data availability committee',
                 text: 'A data availability committee (DAC) is a permissioned group of nodes responsible for providing data availability to a blockchain.',
+            },{
+                url: 'data-availability-layer',
+                title: 'Data availability layer',
+                text: 'A blockchain that provides for other types of chains, like rollups.',
             },{
                 url: 'data-throughput',
                 title: 'Data throughput',
@@ -70,9 +94,21 @@ export const glossaries = [
     },{
         'E':[
             {
+                url: 'ee',
+                title: 'EE',
+                text: 'EE stands for Execution Environment.',
+            },{
+                url: 'execution',
+                title: 'Execution',
+                text: 'A function of modular blockchains where transactions are executed and the new state of the chain is determined.',
+            },{
                 url: 'execution-environment',
                 title: 'Execution environment',
                 text: 'The virtual environment within a blockchain where transactions are processed, and accounts and smart contracts live.',
+            },{
+                url: 'execution-layer',
+                title: 'Execution layer',
+                text: 'A type of modular blockchain whose primary job is hosting smart contracts and executing transactions.',
             }
         ]
     },{
@@ -113,6 +149,10 @@ export const glossaries = [
                 url: 'inter-cluster-communication',
                 title: 'Inter-cluster communication',
                 text: 'Communication that occurs between blockchains that are in different clusters.',
+            },{
+                url: 'isr',
+                title: 'ISR',
+                text: 'ISR stands for Intermediate State Root.',
             }
         ]
     },{
@@ -121,6 +161,10 @@ export const glossaries = [
                 url: 'light-client',
                 title: 'Light client',
                 text: 'A type of node that only downloads and verifies block headers, relying on an honest majority assumption that the state of the chain indicated by the block header is valid.',
+            },{
+                url: 'light-node',
+                title: 'Light node',
+                text: 'In Celestia, a light node is a type of node that verifies block headers and does data availability sampling.',
             },{
                 url: 'liveness',
                 title: 'Liveness',
@@ -132,7 +176,15 @@ export const glossaries = [
             {
                 url: 'modular-blockchain',
                 title: 'Modular blockchain',
-                text: 'A type of blockchain that specializes in only a few functions, rather than all of them.',
+                text: 'A type of blockchain that specializes in one or two tasks, rather than all of them.',
+            },{
+                url: 'modular-stack',
+                title: 'Modular stack',
+                text: 'A combination of multiple modular blockchains.',
+            },{
+                url: 'monolithic-blockchain',
+                title: 'Monolithic blockchain',
+                text: 'A type of blockchain that performs all tasks by itself.',
             }
         ]
     },{
@@ -141,6 +193,10 @@ export const glossaries = [
                 url: 'namespaced-merkle-tree',
                 title: 'Namespaced Merkle Tree',
                 text: 'A Namespaced Merkle Tree (NMT) is a type of binary Merkle tree where each node in the tree is tagged by the minimum and maximum namespace of their children.',
+            },{
+                url: 'nmt',
+                title: 'NMT',
+                text: 'NMT stands for Namespaced Merkle Tree.',
             },{
                 url: 'node',
                 title: 'Node',
@@ -161,6 +217,10 @@ export const glossaries = [
                 url: 'optimistic-rollup',
                 title: 'Optimistic rollup',
                 text: 'A type of rollup that posts its blocks to a separate chain without any cryptographic proofs that attest to their validity.',
+            },{
+                url: 'oru',
+                title: 'ORU',
+                text: 'ORU stands for Optimistic Rollup.',
             }
         ]
     },{
@@ -170,9 +230,21 @@ export const glossaries = [
                 title: 'Peer to peer network',
                 text: 'A network in which nodes are connected and can communicate directly with each other without reliance on a third party to facilitate communication.',
             },{
+                url: 'pfb',
+                title: 'PFB',
+                text: 'PFB stands for PayforBlob.',
+            },{
                 url: 'proof-of-stake',
                 title: 'Proof of Stake',
                 text: 'Proof of Stake is a mechanism that requires blockchain participants to stake a token to participate in consensus.',
+            }
+        ]
+    },{
+        'Q':[
+            {
+                url: 'qgb',
+                title: 'QGB',
+                text: 'QGB stands for Quantum Gravity Bridge.',
             }
         ]
     },{
@@ -193,6 +265,14 @@ export const glossaries = [
                 url: 'scalability',
                 title: 'Scalability',
                 text: 'Scalability is the ability of a blockchain to increase its capacity without an equal increase in the cost to run a node that verifies the chain.',
+            },{
+                url: 'settlement',
+                title: 'Settlement',
+                text: 'A function of modular blockchains where transaction proofs from rollups are verified and disputes are resolved.',
+            },{
+                url: 'settlement-layer',
+                title: 'Settlement layer',
+                text: 'A modular blockchain whose primary role is to provide proof verification and dispute resolution for rollups.',
             },{
                 url: 'sequencer',
                 title: 'Sequencer',
@@ -293,6 +373,10 @@ export const glossaries = [
                 url: 'zk-rollup',
                 title: 'zk-Rollup',
                 text: 'A type of rollup that posts its blocks to a separate chain with a validity proof that attests to the correctness of the block.',
+            },{
+                url: 'zkr',
+                title: 'ZKR',
+                text: 'ZKR stands for ZK Rollup.',
             }
         ]
     }
