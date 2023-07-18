@@ -27,7 +27,7 @@ const DevPortal = () => {
 								<div className={"col-auto"}>
 									<div className={"subtitle"} dangerouslySetInnerHTML={{ __html: heroData.text }} />
 									<AnchorLink
-										to={`/developer-portal#${heroData.buttons[0].url}`}
+										to={`/run-a-node#${heroData.buttons[0].url}`}
 										className={"button button-" + heroData.buttons[0].class}
 										stripHash
 									>
@@ -55,35 +55,34 @@ const DevPortal = () => {
 									</div>
 								</div>
 								<div className={"text-box col-12 col-lg-6"}>
-									<h2 className='title'>What is a node</h2>
+									<h2 className='title'>What is a node?</h2>
 									<p>
-										Think of Celestia as a power grid, except instead of providing electricity, Celestia provides the essential
-										resource to power a blockchain: consensus and data availability. Similar to how anyone can plug into an
-										electricity grid to power their appliance, anyone can plug into Celestia’s network to power their own
-										blockchain.
+										A node is a piece of software that runs on a device like a computer or a phone.
+										Generally, a node verifies that a blockchain works correctly and follows the rules.
+										“Verifying” a blockchain can involve tasks like checking transactions are correct
+										and providing account balances to other nodes.
 									</p>
-									<h2 className='title'>What does it mean to ‘run’ a node</h2>
+									<h2 className='title'>And what about Celestia light nodes?</h2>
 									<p>
-										Think of Celestia as a power grid, except instead of providing electricity, Celestia provides the essential
-										resource to power a blockchain: consensus and data availability. Similar to how anyone can plug into an
-										electricity grid to power their appliance, anyone can plug into Celestia’s network to power their own
-										blockchain.
+										Light nodes sound like you might expect. They are nodes that can run on cheaper
+										hardware and slower internet connections than other node types. The lower
+										requirements make it more accessible for anyone to run a node that verifies the
+										chain. What makes Celestia light nodes unique is that they keep a higher level of
+										security than most other types of light nodes.
 									</p>
 								</div>
 							</div>
 						</div>
 					</section>
 
-					<section className={"start-up"}>
+					<section className={"start-up"} id={`${heroData.buttons[0]?.url.replace(/\s+/g, "-").toLowerCase()}`}>
 						<div className={"container"}>
 							<div className={"row justify-content-between align-items-center"}>
 								<div className={"text-box col-12 col-lg-6"}>
 									<h2 className='with-decor'>Start up a light node</h2>
 									<p className='description'>
-										Celestia gives developers the freedom to define their own sovereign chain, tailored for their
-										application,Celestia gives developers the freedom to define their own sovereign chain, tailored for their
-										applicationCelestia gives developers the freedom to define their own sovereign chain, tailored for their
-										application
+										Light nodes are the most accessible Celestia node that can run on many devices.
+										Pick an option that suits your difficulty and get your Celestia light node up and running.
 									</p>
 								</div>
 								<div className={"image-box--modular col-12 col-lg-6"}>
