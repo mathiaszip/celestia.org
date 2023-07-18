@@ -1,10 +1,5 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://celestia.org",
-    title: "Celestia",
-  },
-
-  siteMetadata: {
     title: `The first modular blockchain network`,
     description: `Celestia is a modular consensus and data network, built to enable anyone to easily deploy their own blockchain with minimal overhead.`,
     author: `@CelestiaOrg`,
@@ -82,8 +77,10 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: "https://dev.lazyledger.org",
-        sitemap: "https://dev.lazyledger.org/sitemap.xml",
+        host: "https://celestia.org",
+        // host: "https://dev.lazyledger.org",
+        sitemap: "https://celestia.org/sitemap.xml",
+        // sitemap: "https://dev.lazyledger.org/sitemap.xml",
         output: "/robots.txt",
         policy: [{ userAgent: '*', allow: '/' }]
       }
