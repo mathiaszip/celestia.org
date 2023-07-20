@@ -20,6 +20,12 @@ export const ecosystemCategories = [
                 text: '',
                 image: 'ecosystem/vistara.png',
                 url: 'https://docs.vistara.dev/'
+            },
+            {
+                title: 'Snapchain',
+                text: '',
+                image: 'ecosystem/snapchain.png',
+                url: 'https://www.snapchain.dev/'
             }
         ]
     },{
@@ -107,6 +113,12 @@ export const ecosystemCategories = [
                 text: '',
                 image: 'ecosystem/stackr.png',
                 url: 'https://www.stackrlabs.xyz/'
+            },
+            {
+                title: 'Cosmos SDK',
+                text: '',
+                image: 'ecosystem/cosmos-sdk.png',
+                url: 'https://cosmos.network/'
             }
         ]
     },{
@@ -124,6 +136,12 @@ export const ecosystemCategories = [
                 text: '',
                 image: 'ecosystem/cosmwasm.png',
                 url: 'https://cosmwasm.com/'
+            },
+            {
+                title: 'Cartesi',
+                text: '',
+                image: 'ecosystem/cartesi.png',
+                url: 'https://cartesi.io/'
             }
         ]
     },{
@@ -230,6 +248,12 @@ export const ecosystemCategories = [
                 url: 'https://argus.gg/'
             },
             {
+                title: 'Curio',
+                text: '',
+                image: 'ecosystem/curio.png',
+                url: 'https://www.curio.gg/'
+            },
+            {
                 title: 'Worlds',
                 text: '',
                 image: 'ecosystem/worlds.png',
@@ -257,6 +281,11 @@ export const ecosystemCategories = [
                 text: '',
                 image: 'ecosystem/pklab.png',
                 url: 'https://bakingbad.dev/'
+            },{
+                title: 'Manta Network',
+                text: '',
+                image: 'ecosystem/manta.png',
+                url: 'https://manta.network/'
             },
             {
                 title: 'Modular cloud',
@@ -287,6 +316,24 @@ export const ecosystemCategories = [
                 text: '',
                 image: 'ecosystem/dora.png',
                 url: 'https://www.ondora.xyz/'
+            },
+            {
+                title: 'Cosmology',
+                text: '',
+                image: 'ecosystem/cosmology.png',
+                url: 'https://cosmology.tech/'
+            },
+            {
+                title: 'Blockless',
+                text: '',
+                image: 'ecosystem/blockless.png',
+                url: 'https://blockless.network/'
+            },
+            {
+                title: 'Numia',
+                text: '',
+                image: 'ecosystem/numia.png',
+                url: 'https://www.numia.xyz/'
             }
         ]
     }
