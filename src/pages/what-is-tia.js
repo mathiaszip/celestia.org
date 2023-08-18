@@ -83,7 +83,7 @@ const DevPortal = () => {
 											</p>
 											<p>
 												This does mean it’s important to{" "}
-												<a href='/' target='_blank'>
+												<a href='https://www.coinbase.com/security/security-tips' target='_blank'>
 													get familiar with basic wallet practices↗
 												</a>{" "}
 												for safely storing and transacting with TIA on Celestia.
@@ -107,19 +107,15 @@ const DevPortal = () => {
 									<h2 className='title'>Staking</h2>
 									<div className='custody-text-box'>
 										<p>
-											Nodes on Celestia lock up (stake) TIA to{" "}
-											<a href='/' target='_blank'>
-												become a validator
-											</a>{" "}
-											that participates in consensus. Any node can enter the validator set if they have enough tokens to join
-											the top 75 by stake.
+											Nodes on Celestia lock up (stake) TIA to become a validator that participates in consensus. Any node can
+											enter the validator set if they have enough tokens to join the top 75 by stake.
 										</p>
 										<p>
 											Users that don’t reach the top 75 or don’t want to run a validator can delegate their TIA to an existing
 											validator that will stake it on their behalf. TIA delegations can always be retrieved from validators
 											after undergoing a 3-week unbonding period.
 											<div className='link-wrapper'>
-												<a className='link' href='/'>
+												<a className='link' href='https://docs.celestia.org/'>
 													View Documentation
 													<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none'>
 														<path
