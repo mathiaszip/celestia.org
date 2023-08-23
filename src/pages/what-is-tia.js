@@ -81,10 +81,7 @@ const WhatIsTIA = () => {
 												No banks or intermediaries necessary.
 											</p>
 											<p>
-												It’s important to{" "}
-												<a href='https://www.coinbase.com/security/security-tips' target='_blank'>
-													get familiar with basic wallet practices↗
-												</a>{" "}
+												It’s important to get familiar with basic wallet practices
 												for safely storing and transacting with TIA on Celestia.
 											</p>
 										</div>
@@ -106,12 +103,10 @@ const WhatIsTIA = () => {
 									<h2 className='title'>Stake TIA</h2>
 									<div className='custody-text-box'>
 										<p>
-											Nodes on Celestia lock up (stake) TIA to become a validator that participates in consensus. Any node can
-											enter the validator set if they have enough tokens to join the top 75 by stake.
+											Users can stake TIA by delegating to a validator in the active set and receive a share of the validator’s
+											staking rewards. Delegations can always be retrieved after a 3-week unbonding period.
 										</p>
 										<p>
-											Users can stake TIA by delegating to a validator in the active set and receive a share of
-											Celestia’s staking rewards. Delegations can always be retrieved after a 3-week unbonding period.
 											
 											<div className="link-list">
 												<div className='link-wrapper me-4'>
@@ -244,9 +239,9 @@ const WhatIsTIA = () => {
 								</div>
 								<div className={"col-12 col-lg-6"}>
 									<div className='link-card'>
-										<div className='link-title'>Create wallet with celestia-app</div>
+										<div className='link-title'>Create wallet with celestia-node</div>
 										<div className='link-wrapper'>
-											<a className='link' href='https://docs.celestia.org/developers/celestia-app-wallet/' target='_blank'>
+											<a className='link' href='https://docs.celestia.org/developers/celestia-node-key/' target='_blank'>
 												Create wallet
 												<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='none'>
 													<path
