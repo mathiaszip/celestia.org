@@ -239,34 +239,35 @@ class Footer extends React.Component {
 						</div>
 					</div>
 
-                    <div className={'row justify-content-center'}>
-                        <div className={'col col-12 col-sm-6'}>
-                            <p>This website is maintained by Celestia Labs.</p>
-                        </div>
-                    </div>
-
-                    <div className={'row justify-content-center copyright'}>
-                        <div className={'col col-12 col-sm-6 text-center'}>
-                            <p>Website designed with <i className={'icon-heart'}/> by <a href="https://designatives.com">Designatives</a></p>
-                        </div>
-                    </div>
-
-
-                </div>
-                <ReactModal
-                    isOpen={this.state.isModalOpen}
-                >
-                    <div className={'inner'}>
-                        <h3 className={'text-center'}>{this.state.popupTitle}</h3>
-                        <div className={'text-center'} dangerouslySetInnerHTML={{
-                            __html: this.state.msg
-                        }}/>
-                        <button className={'close-button'} onClick={this.handleModalClose}><i className={'icon-close'} aria-label="Close"></i></button>
-                    </div>
-                </ReactModal>
-            </footer>
-        )
-    }
+					<div className={"d-flex justify-content-center"}>
+						<div className={"col col-12 col-sm-6 d-flex flex-column align-items-center"}>
+							<p className="mb-4">
+								This website is maintained by Celestia Labs, trading name of Strange Loop Labs AG, Werdenbergerweg 11, 9490 Vaduz,
+								Liechtenstein.
+							</p>
+							<p className="credit">
+								Made with <i className={"icon-heart"} /> by <a href='https://designatives.com'>Designatives</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<ReactModal isOpen={this.state.isModalOpen}>
+					<div className={"inner"}>
+						<h3 className={"text-center"}>{this.state.popupTitle}</h3>
+						<div
+							className={"text-center"}
+							dangerouslySetInnerHTML={{
+								__html: this.state.msg,
+							}}
+						/>
+						<button className={"close-button"} onClick={this.handleModalClose}>
+							<i className={"icon-close"} aria-label='Close'></i>
+						</button>
+					</div>
+				</ReactModal>
+			</footer>
+		);
+	}
 }
 
 export default Footer;
