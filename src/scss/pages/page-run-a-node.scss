@@ -1,7 +1,6 @@
 .run-a-node {
 	position: relative;
-
-	z-index: 0;
+	z-index: 1;
 	background: url(../images/BG/technology.png) no-repeat scroll top 500px right transparent;
 
 	@include media-breakpoint-down(xl) {
@@ -86,20 +85,6 @@
 		}
 	}
 
-	.subtitle {
-		font-family: $ruberoid;
-		font-weight: 500;
-		font-size: 18px;
-		color: #000000;
-		letter-spacing: 0;
-		line-height: 25px;
-		margin-bottom: 30px;
-		max-width: 400px;
-		@include media-breakpoint-down(sm) {
-			max-width: 100%;
-		}
-	}
-
 	.description {
 		font-family: $inter;
 		font-weight: 300;
@@ -120,6 +105,23 @@
 		}
 		@include media-breakpoint-down(sm) {
 			padding-top: 70vw;
+		}
+		.text {
+			font-family: $ruberoid;
+			font-weight: 500;
+			font-size: 18px;
+			color: #000000;
+			letter-spacing: 0.22px;
+			line-height: 26px;
+			max-width: 450px;
+			margin-bottom: 50px;
+	
+			@include media-breakpoint-down(md) {
+				font-size: 14px;
+				line-height: 21px;
+				width: 100%;
+				margin-bottom: 30px;
+			}
 		}
 	}
 
