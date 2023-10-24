@@ -32,7 +32,7 @@ export const frameworks = {
 			type: "external",
 			link: {
 				text:"Explore Eclipse",
-				url: "https://docs.eclipse.builders/building-on-eclipse/run-your-own-testnet-chain",
+				url: "https://docs.eclipse.builders/",
 			},
 		},
         	{
