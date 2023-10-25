@@ -1,20 +1,30 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import Header from "./header";
 import Footer from "./footer";
-import {useEffect} from "react";
 
 export default function Layout({ children, footerBoxes, footerBoxes2 }) {
 
-	useEffect(() => {
-		const elements = document.querySelectorAll("[class^=plausible-event-name]")
+	const [loaded,setLoaded] = useState(false)
 
-		if(window.plausible) {
+	useEffect(() => {
+		if (typeof window !== `undefined` && loaded) {
+			const elements = document.querySelectorAll("[class*=plausible-event-name]")
+
 			elements.forEach(function (element) {
 				element.addEventListener("click", function (e) {
-					window.plausible(element.classList[0].substring(element.classList[0].indexOf('=') + 1))
+					element.classList.forEach(function(className){
+						if(className.includes('plausible')){
+							//console.log('ADD EVENT: ' + className.substring(className.indexOf('=') + 1))
+							window.plausible(className.substring(className.indexOf('=') + 1))
+						}
+					})
 				}, false);
 			})
 		}
+	});
+
+	useEffect(() => {
+		setLoaded(true)
 	}, []);
 
 	return (
