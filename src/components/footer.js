@@ -74,6 +74,11 @@ const navigation = {
 				type: "internal",
 			},
 			{
+				text: "Careers",
+				url: "/careers/",
+				type: "internal",
+			},
+			{
 				text: "Terms of Service",
 				url: "/tos/",
 				type: "internal",
@@ -81,6 +86,11 @@ const navigation = {
 			{
 				text: "Privacy Policy",
 				url: "/privacy/",
+				type: "internal",
+			},
+			{
+				text: "Team",
+				url: "/team/",
 				type: "internal",
 			},
 		],
