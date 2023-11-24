@@ -8,6 +8,31 @@
 		}
 	}
 
+	.data-availability {
+		padding-top: 0px;
+		padding-bottom: 0px;
+		.image-box--node {
+			@include media-breakpoint-down(md) {
+				padding: 0px;
+				max-width: 85%;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+
+		.text-box {
+			h2 {
+				margin-bottom: 30px;
+			}
+			&:last-of-type {
+				margin-top: 60px;
+				@include media-breakpoint-down(md) {
+					margin-top: 40px;
+				}
+			}
+		}
+	}
+
 	.explore-celestia {
 		padding-top: 120px;
 		padding-bottom: 0px;
@@ -97,7 +122,7 @@
 				width: 100%;
 				max-width: 250px;
 				@include media-breakpoint-down(md) {
-					max-width: 120px;
+					max-width: 150px;
 				}
 			}
 
@@ -156,12 +181,6 @@
 			}
 		}
 	}
-	.cards-section {
-		padding-top: 120px;
-		@include media-breakpoint-down(sm) {
-			padding-top: 80px;
-		}
-	}
 
 	.join-the-community {
 		padding: 110px 0px 130px 0px;
@@ -169,7 +188,7 @@
 			padding: 80px 0px;
 		}
 		@include media-breakpoint-down(sm) {
-			padding: 50px 0px;
+			padding: 100px 0px;
 		}
 		.row {
 			margin-top: 60px;
@@ -362,5 +381,8 @@
 				}
 			}
 		}
+	}
+	.backers-section {
+		padding-top: 0px;
 	}
 }

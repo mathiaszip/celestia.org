@@ -4,10 +4,8 @@ import Layout from "../components/layout";
 import { Link } from "gatsby";
 
 import "../scss/main.scss";
-import AdvantagesSection from "../components/sections/advantages-section";
 
 import { heroData } from "../datas/home/hero-section";
-import { advantages } from "../datas/home/advantages";
 import { backers } from "../datas/home/backers";
 import { FooterBoxes } from "../datas/home/content";
 import { exploreCelestia } from "../datas/home/explore-celestia";
@@ -22,6 +20,8 @@ import CommunityItem from "../components/modules/community-item";
 
 import { seoContent } from "../datas/home/seoContent";
 import Seo from "../components/seo";
+
+import image1 from "../images/home/data-availability-image.png";
 
 const IndexPage = () => {
 	const [isModalOpen, setIsModalOpen] = useState(false);
@@ -45,10 +45,25 @@ const IndexPage = () => {
 			<div className='index-page'>
 				<main>
 					<HeroSection heroData={heroData} />
-					<div className='advantages-section'>
-						<AdvantagesSection advantages={advantages} />
-					</div>
 					<div className='container'>
+						<section className={"data-availability"}>
+							<div className={"row justify-content-between align-items-center"}>
+								<div className={"image-box--node col-12 col-lg-6"}>
+									<div className='image-wrapper'>
+										<img className='img' style={{ width: `100%`, maxWidth: `563px` }} src={image1} alt={""} />
+									</div>
+								</div>
+								<div className={"text-box col-12 col-lg-6"}>
+									<h2 className='with-decor'>Data availability</h2>
+									<p>
+										Celestia is a high-throughput and verifiable data availability layer for L2s and rollups. Celestia’s
+										verifiability comes from a new primitive, data availability sampling (DAS). DAS allows Celestia light nodes to
+										efficiently verify data availability with only a tiny portion of data rather than all of it.
+									</p>
+									<p>And DAS enables Celestia to securely scale with the number of users (light nodes).</p>
+								</div>
+							</div>
+						</section>
 						<section id='explore-celestia' className='explore-celestia'>
 							<div className='d-flex justify-content-center'>
 								<h2 className='with-decor pb-2'>Explore Celestia</h2>
@@ -166,45 +181,6 @@ const IndexPage = () => {
 											</div>
 										</div>
 									</Link>
-								</div>
-							</div>
-						</section>
-
-						<section className='cards-section'>
-							<h2 className='with-decor pb-2'>How it works</h2>
-							<div className='subtitle'>
-								Celestia is a minimal blockchain that only orders and publishes transactions but does not execute them. By decoupling
-								the consensus and application execution layers, Celestia modularizes the blockchain technology stack and unlocks new
-								possibilities for decentralized application builders.
-							</div>
-
-							<div className='row mt-5'>
-								<div className='col col-12 col-lg-6 pe-lg-4'>
-									<Card
-										image='home/architecture.png'
-										title='Traditional monolithic architecture'
-										text={
-											"<ul><li>Developers can only use programming languages supported by chain's execution environment</li><li>All applications run on the same process (the world computer model), with shared gas resources</li><li>Smart contracts cannot be updated without a hard fork</li></ul>"
-										}
-									/>
-								</div>
-								<div className='col col-12 col-lg-6 ps-lg-4'>
-									<Card
-										image='home/celestia-architecture.png'
-										title='Celestia-enabled modular architecture'
-										text={
-											"<ul><li>Developers can effortlessly define their own virtual execution environments; similar to virtual machines</li><li>Each application gets its own sovereign execution space, while inheriting the security of Celestia's consensus</li><li>Applications can be updated without main chain hard forks</li></ul>"
-										}
-									/>
-								</div>
-							</div>
-							<div className='row justify-content-center pt-5'>
-								<div className='col-auto'>
-									<a href='/what-is-celestia/' target='_blank'>
-										<button className='button button-simple button-internal' tabIndex={0} id='developer'>
-											Learn More
-										</button>
-									</a>
 								</div>
 							</div>
 						</section>
