@@ -27,12 +27,12 @@ export const frameworks = {
 		{
 			id: 3,
 			title: "Eclipse",
-			text: "Eclipse is a customizable rollup provider for developers building decentralized applications.",
+			text: "Ethereum's fastest Layer 2, powered by the SVM.",
 			image: "developer-portal/eclipse.png",
 			type: "external",
 			link: {
-				text: "Explore Eclipse",
-				url: "https://docs.eclipse.builders/building-on-eclipse/run-your-own-testnet-chain/",
+				text:"Explore Eclipse",
+				url: "https://docs.eclipse.builders/",
 			},
 		},
 		{
@@ -42,8 +42,8 @@ export const frameworks = {
 			image: "developer-portal/opstack.png",
 			type: "external",
 			link: {
-				text: "Explore OP Stack",
-				url: "https://docs.celestia.org/category/optimism/",
+				text:"Explore OP Stack",
+				url: "https://docs.celestia.org/developers/intro-to-op-stack",
 			},
 		},
 		{

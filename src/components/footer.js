@@ -3,7 +3,7 @@ import { Link } from "gatsby";
 import addToMailchimp from "gatsby-plugin-mailchimp";
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 
-import FooterBox from "../components/footer-box";
+// import FooterBox from "../components/footer-box";
 import FooterBox2 from "../components/footer-box-2";
 import ReactModal from "react-modal";
 
@@ -74,9 +74,9 @@ const navigation = {
 				type: "internal",
 			},
 			{
-				text: "Ecosystem Jobs",
-				url: "https://celestia.pallet.com/jobs",
-				type: "external",
+				text: "Careers",
+				url: "/careers/",
+				type: "internal",
 			},
 			{
 				text: "Terms of Service",
@@ -86,6 +86,11 @@ const navigation = {
 			{
 				text: "Privacy Policy",
 				url: "/privacy/",
+				type: "internal",
+			},
+			{
+				text: "Team",
+				url: "/team/",
 				type: "internal",
 			},
 		],
@@ -249,9 +254,7 @@ class Footer extends React.Component {
 
 					<div className={"d-flex justify-content-center"}>
 						<div className={"col col-12 col-sm-6 d-flex flex-column align-items-center"}>
-							<p className='mb-3'>
-								This website is maintained by Celestia Labs.
-							</p>
+							<p className='mb-3'>This website is maintained by Celestia Labs.</p>
 							<p>
 								Website designed with <i className={"icon-heart"} /> by <a href='https://designatives.com'>Designatives</a>
 							</p>

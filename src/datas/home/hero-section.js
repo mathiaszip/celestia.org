@@ -1,16 +1,16 @@
 export const heroData = {
     title: 'The first modular blockchain network',
-    text: 'Celestia is a modular consensus and data network, built to enable anyone to easily deploy their own blockchain with minimal overhead.',
+    text: 'Celestia is a modular data availability network that securely scales with the number of users, making it easy for anyone to launch their own blockchain.',
     buttons:[
             {
                 text: 'Build modular',
-                class: 'simple',
+                class: 'simple plausible-event-name=Build_Modular_Button--Homepage-Hero',
                 type: 'internal',
                 url: '/developer-portal/'
             },
             {
                 text: 'Explore',
-                class: 'white',
+                class: 'white plausible-event-name=Explore_Button--Homepage-Hero',
                 type: 'anchor',
                 url: '/#explore-celestia/'
             }
