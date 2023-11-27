@@ -41,15 +41,59 @@ const IndexPage = () => {
 							</div>
 						</div>
 					</section>
-					<div className='container'>
-						<section id='unleash-section' className='unleash-section'>
-							<div className='d-flex justify-content-center'>
+					<section id='unleash-section' className='unleash-section'>
+						<div className='container'>
+							<div className='title d-flex justify-content-center'>
 								<h2 className='pb-2'>
 									Unleash full <span className='gradient-text'>expressivity onchain</span>
 								</h2>
 							</div>
-						</section>
-					</div>
+							<div className='d-flex flex-column flex-lg-row gap-5 gap-lg-3'>
+								<div className='col-12 col-lg-6 col-1'>
+									<div className='d-flex flex-column gap-3 align-items-lg-end'>
+										<div className='card'>
+											<div className='card-body'>
+												<h3 className='card-title'>Monetize</h3>
+												<p className='card-text'>
+													Low transaction fees unlocks new opportunities to monetize and experiment with in-game economies.
+												</p>
+											</div>
+										</div>
+										<div className='card small'>
+											<div className='card-body'>
+												<h3 className='card-title'>Dynamic scaling</h3>
+												<p className='card-text'>
+													Celestia provides dedicated, dynamic throughput for developers, that scales with the number of
+													users as the first blockchain with Data Availability Sampling.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div className='col-12 col-lg-6 col-2'>
+									<div className='d-flex flex-column gap-3'>
+										<div className='card'>
+											<div className='card-body'>
+												<h3 className='card-title'>Minimized platform risk</h3>
+												<p className='card-text'>
+													Use Celestia's modular data layer with any blockchain framework and upgrade as new modular
+													capabilities come online.
+												</p>
+											</div>
+										</div>
+										<div className='card small'>
+											<div className='card-body'>
+												<h3 className='card-title'>Expressivity</h3>
+												<p className='card-text'>
+													Express any type of game logic as a rollup on Celestia, even fully onchain gameplay.
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
 				</main>
 				<ReactModal isOpen={isModalOpen}>
 					<div className='inner'>
