@@ -86,3 +86,21 @@
 		// }
 	}
 }
+
+.gaming-wrapper {
+	header.blur {
+		.blurry {
+			background-color: rgb(57 57 57 / 80%);
+		}
+	}
+	header:not(.menu-opened) {
+		.logo {
+			img {
+				filter: invert(1);
+			}
+		}
+		nav ul li {
+			color: #fff;
+		}
+	}
+}

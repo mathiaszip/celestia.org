@@ -1,75 +1,80 @@
-.hero-section{
-  padding:0 0 120px;
+.hero-section {
+	padding: 0 0 120px;
 
-  @include media-breakpoint-down(md) {
-    padding:0 0 120px;
-  }
+	@include media-breakpoint-down(md) {
+		padding: 0 0 120px;
+	}
 
-  @include media-breakpoint-down(sm) {
-    padding:0 0 55px;
-  }
+	@include media-breakpoint-down(sm) {
+		padding: 0 0 55px;
+	}
 
-  .container{
-    background:url(../images/home/home-hero-image.svg) no-repeat scroll center right transparent;
+	.container {
+		background: url(../images/home/home-hero-image.svg) no-repeat scroll center right transparent;
 
-    @include media-breakpoint-down(xl) {
-      background-size:40vw;
-    }
-    @include media-breakpoint-down(lg) {
-      background-position:top right;
-    }
-    @include media-breakpoint-down(md) {
-      background-position:top center;
-      padding-top:40vw;
-    }
-    @include media-breakpoint-down(sm) {
-      padding-top:60vw;
-      background-size:70vw;
-    }
-  }
+		@include media-breakpoint-down(xl) {
+			background-size: 40vw;
+		}
+		@include media-breakpoint-down(lg) {
+			background-position: top right;
+		}
+		@include media-breakpoint-down(md) {
+			background-position: top center;
+			padding-top: 40vw;
+		}
+		@include media-breakpoint-down(sm) {
+			padding-top: 60vw;
+			background-size: 70vw;
+		}
+	}
 
-  h1{
-    margin-bottom: 30px;
-    max-width:970px;
-    width:80%;
+	h1 {
+		margin-bottom: 30px;
+		max-width: 970px;
+		width: 80%;
 
-    @include media-breakpoint-down(xl) {
-      max-width:870px;
-      width:70%;
-    }
+		@include media-breakpoint-down(xl) {
+			max-width: 870px;
+			width: 70%;
+		}
 
-    @include media-breakpoint-down(lg) {
-      max-width:670px;
-    }
-    @include media-breakpoint-down(md) {
-      width:100%;
-      margin-bottom:20px;
-    }
-  }
+		@include media-breakpoint-down(lg) {
+			max-width: 670px;
+		}
+		@include media-breakpoint-down(md) {
+			width: 100%;
+			margin-bottom: 20px;
+		}
+	}
 
-  .text{
-    font-family: $ruberoid;
-    font-weight:500;
-    font-size: 18px;
-    color: #000000;
-    letter-spacing: 0.22px;
-    line-height: 26px;
-    width:80%;
-    max-width: 680px;
-    margin-bottom: 50px;
+	.text {
+		font-family: $ruberoid;
+		font-weight: 500;
+		font-size: 18px;
+		color: #000000;
+		letter-spacing: 0.22px;
+		line-height: 26px;
+		width: 80%;
+		max-width: 680px;
+		margin-bottom: 50px;
 
-    @include media-breakpoint-down(md) {
-      font-size:14px;
-      line-height: 21px;
-      width:100%;
-      margin-bottom:30px;
-    }
-  }
+		@include media-breakpoint-down(md) {
+			font-size: 14px;
+			line-height: 21px;
+			width: 100%;
+			margin-bottom: 30px;
+		}
+	}
 
-  .button-simple,.button-white, .button-icon, .button-external{
-    margin-right:20px;
-    @include media-breakpoint-down(sm) {
-      margin-bottom:20px;
-    }
-  }
+	.button-simple,
+	.button-white,
+	.button-purple,
+	.button-blurred,
+	.button-icon,
+	.button-external {
+		margin-right: 20px;
+		@include media-breakpoint-down(sm) {
+			margin-bottom: 20px;
+		}
+	}
 }

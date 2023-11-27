@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Header from "./header";
 import Footer from "./footer";
 
-export default function Layout({ children, footerBoxes, footerBoxes2 }) {
+export default function Layout({ children, footerBoxes, footerBoxes2, className }) {
 	const [loaded, setLoaded] = useState(false);
 
 	useEffect(() => {
@@ -31,10 +31,10 @@ export default function Layout({ children, footerBoxes, footerBoxes2 }) {
 	}, []);
 
 	return (
-		<>
+		<div className={className}>
 			<Header />
 			{children}
 			<Footer FooterBoxes={footerBoxes} FooterBoxes2={footerBoxes2} />
-		</>
+		</div>
 	);
 }

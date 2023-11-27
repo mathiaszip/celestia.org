@@ -26,7 +26,7 @@ const IndexPage = () => {
 	};
 
 	return (
-		<Layout footerBoxes={FooterBoxes}>
+		<Layout footerBoxes={FooterBoxes} className={"gaming-wrapper"}>
 			<Seo title={seoContent.title} description={seoContent.description} ogTitle={seoContent.ogTitle} image={seoContent.image} />
 			<div className='gaming-page'>
 				<main>
@@ -36,8 +36,8 @@ const IndexPage = () => {
 							<div className={"text"}>Celestia provides the expressivity to build fully onchain games</div>
 
 							<div className='buttom'>
-								<Button class={"simple"} type={"external"} text={"Build Modular"} url={"/"} />
-								<Button class={"white"} type={"external"} text={"Contact"} url={"/"} />
+								<Button class={"purple"} type={"external"} text={"Build Modular"} url={"/"} />
+								<Button class={"blurred"} type={"external"} text={"Contact"} url={"/"} />
 							</div>
 						</div>
 					</section>
