@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ReactModal from "react-modal";
 import Layout from "../components/layout";
 import Button from "../components/buttons/button";
+import { StaticImage } from "gatsby-plugin-image";
 
 import "../scss/main.scss";
 import { FooterBoxes } from "../datas/home/content";
@@ -90,6 +91,54 @@ const IndexPage = () => {
 											</div>
 										</div>
 									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section className={"games-section"}>
+						<div className={"container"}>
+							<h2 className='with-decor mb-5'>Games using the modular stack</h2>
+							<div className='row flex-column-reverse flex-lg-row mb-5'>
+								<div className='flex flex-column col-12 col-lg-4 d-flex justify-content-center'>
+									<h3 className='title mb-4'>Argus</h3>
+									<p className='text'>
+										World Engine provides the foundation for game developers to build and customize their own open and
+										interoperable game worlds.
+									</p>
+								</div>
+								<div className='col-12 col-lg-8 mb-4 mb-lg-0'>
+									<StaticImage className='image-right' src='../images/gaming/game-1.jpg' />
+								</div>
+							</div>
+							<div className='row flex-column flex-lg-row'>
+								<div className='col-12 col-lg-8 mb-4 mb-lg-0'>
+									<StaticImage className='image-left' src='../images/gaming/game-2.jpg' />
+								</div>
+								<div className='flex flex-column col-12 col-lg-4 d-flex justify-content-center'>
+									<h3 className='title mb-4'>Curio</h3>
+									<p className='text'>
+										Curio is the maker of Keystone - a rollup SDK for games focused on performance and composability. Keystone
+										powers their upcoming social strategy game and many more to come in the modular ecosystem.
+									</p>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section className={"unlock-section"}>
+						<div className={"container"}>
+							<div className='row flex-column flex-lg-row mb-5'>
+								<div className='title-col flex flex-column col-12 col-lg-6 d-flex justify-content-center'>
+									<h2 className='with-decor mb-4'>Unlock capabilities</h2>
+									<p className='text'>
+										Find the ideal modular stack that meets the scaling, flexibility, and sustainability requirements for your
+										game.
+									</p>
+									<div className='button-wrapper mt-3'>
+										<Button class={"simple"} type={"external"} text={"Level up"} url={"/"} />
+									</div>
+								</div>
+								<div className='col-12 col-lg-6 mt-5 mt-lg-0'>
+									<StaticImage src='../images/gaming/game-1.jpg' />
 								</div>
 							</div>
 						</div>
