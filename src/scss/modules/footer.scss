@@ -340,10 +340,10 @@ footer {
 		font-style: normal;
 		font-weight: 600;
 		line-height: normal;
-    opacity:1 ;
-    @include media-breakpoint-down(sm) {
-      font-size: 13px;
-    }
+		opacity: 1;
+		@include media-breakpoint-down(sm) {
+			font-size: 13px;
+		}
 	}
 }
 
