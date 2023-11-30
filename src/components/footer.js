@@ -12,6 +12,11 @@ const navigation = {
 		title: "Developers",
 		links: [
 			{
+				text: "Developer portal",
+				url: "/developer-portal",
+				type: "internal",
+			},
+			{
 				text: "Docs",
 				url: "https://docs.celestia.org/",
 				type: "external",
@@ -27,18 +32,13 @@ const navigation = {
 		title: "Resources",
 		links: [
 			{
-				text: "FAQ",
-				url: "/faq",
+				text: "Technology",
+				url: "/technology",
 				type: "internal",
 			},
 			{
 				text: "Glossary",
 				url: "/glossary",
-				type: "internal",
-			},
-			{
-				text: "Learn modular",
-				url: "/learn",
 				type: "internal",
 			},
 			{
@@ -50,6 +50,11 @@ const navigation = {
 				text: "Podcast",
 				url: "https://podcast.celestia.org/",
 				type: "external",
+			},
+			{
+				text: "Resources",
+				url: "/resources",
+				type: "internal",
 			},
 		],
 	},
@@ -231,7 +236,7 @@ class Footer extends React.Component {
 								</div>
 								<div className={"col col-12 col-sm-3 align-right"}>
 									<div className={"col-title text-right"}>Follow us</div>
-									<AnchorLink to={`/#community`} className={"button button-footer"} stripHash>
+									<AnchorLink to={`/community`} className={"button button-footer"} stripHash>
 										Community
 									</AnchorLink>
 								</div>
