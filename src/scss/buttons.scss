@@ -32,7 +32,6 @@
 }
 
 .button-white{
-  border: 1px solid #000000;
   border-radius: 6px;
   font-family: $ruberoid;
   font-weight:500;
@@ -46,6 +45,8 @@
   display:inline-block;
   height:50px;
   line-height:50px;
+  background:#FFF;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.16);
 
   &:hover{
     background:#000;
