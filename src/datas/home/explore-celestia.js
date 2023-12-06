@@ -5,7 +5,7 @@ export const exploreCelestia = [
         image: 'home/explore-1.png',
         link: "/ecosystem/",
     },{
-        title: 'Use TIA',
+        title: 'Use Tia',
         text: 'Pay for blobspace, secure the network, and participate in governance',
         image: 'home/explore-2.png',
         link: "/what-is-tia/",
