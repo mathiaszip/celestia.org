@@ -138,7 +138,7 @@ const IndexPage = () => {
 									</div>
 								</div>
 								<div className='col-12 col-lg-6 mt-5 mt-lg-0'>
-									<StaticImage src='../images/gaming/game-1.jpg' />
+									<StaticImage src='../images/gaming/game-3.jpg' />
 								</div>
 							</div>
 						</div>
