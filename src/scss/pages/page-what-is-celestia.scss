@@ -15,7 +15,8 @@
 		}
 	}
 
-	h2, h3 {
+	h2,
+	h3 {
 		font-size: 36px;
 		font-style: normal;
 		line-height: 1.22em;
@@ -26,13 +27,8 @@
 		}
 		@include media-breakpoint-down(sm) {
 			font-size: 26px;
-			letter-spacing:0.1px;
+			letter-spacing: 0.1px;
 		}
-	}
-
-	.sticky-container {
-		position: relative;
-		z-index: 10;
 	}
 
 	.lead-text {
@@ -136,12 +132,48 @@
 		}
 	}
 
+	.tell-me-about-celestia {
+		margin-bottom: 80px;
+		padding: 0;
+		@include media-breakpoint-down(lg) {
+			margin-bottom: 70px;
+		}
+		.title {
+			max-width: 250px;
+		}
+		.image-box--different {
+			height: inherit;
+			.image-wrapper {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+
 	.what-is-a-modular-blockchain {
 		margin-bottom: 80px;
 		padding: 0;
 		@include media-breakpoint-down(lg) {
 			margin-bottom: 70px;
 			padding-top: 40px;
+		}
+		.title {
+			margin-bottom: 0px;
+		}
+	}
+
+	.data-availability-sampling {
+		margin-bottom: 80px;
+		padding: 0;
+		.image-box--different {
+			padding: 0 30px;
+		}
+		@include media-breakpoint-down(lg) {
+			margin-bottom: 70px;
+			padding-top: 40px;
+			.image-box--different {
+				padding: 10px 10px;
+			}
 		}
 		.title {
 			margin-bottom: 0px;
@@ -162,7 +194,7 @@
 			padding: 0 47px;
 			@include media-breakpoint-down(lg) {
 				background-position: 50%;
-				padding: 0 30px;
+				padding: 0px 20px;
 				.image-wrapper {
 					width: 100%;
 					height: 100%;
@@ -180,6 +212,9 @@
 		}
 		.image-box--different {
 			height: inherit;
+			@include media-breakpoint-down(lg) {
+				padding: 0 20px;
+			}
 			.image-wrapper {
 				width: 100%;
 				height: 100%;
@@ -358,7 +393,7 @@
 			@include media-breakpoint-down(sm) {
 				margin-bottom: 40px;
 			}
-			
+
 			.image-box--availability {
 				display: flex;
 				justify-content: center;
@@ -412,7 +447,7 @@
 		left: 0;
 		width: 100%;
 		float: left;
-		margin-bottom: 30px;
+		margin-bottom: 40px;
 
 		.category-menu {
 			@include media-breakpoint-down(lg) {
@@ -438,6 +473,7 @@
 			display: none;
 			cursor: pointer;
 			background: rgba(246, 246, 246, 0.7);
+			backdrop-filter: blur(10px);
 			border-radius: 6px;
 			padding: 25px;
 			margin-bottom: 10px;
@@ -462,7 +498,7 @@
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				background-color: #EDEDED;
+				background-color: #ededed;
 				border-radius: 4px;
 				margin-left: auto;
 			}
@@ -489,7 +525,6 @@
 			@include media-breakpoint-down(lg) {
 				padding: 0 20px;
 			}
-
 
 			.toc-title {
 				font-family: $ruberoid;
@@ -641,7 +676,10 @@
 }
 
 .what-is-celestia + footer {
+	@include media-breakpoint-down(lg) {
+		padding-top: 400px;
+	}
 	@include media-breakpoint-down(md) {
-		padding-top: 640px;
+		padding-top: 600px;
 	}
 }
