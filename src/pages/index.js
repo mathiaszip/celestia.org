@@ -22,6 +22,11 @@ import CommunityItem from "../components/modules/community-item";
 
 import { seoContent } from "../datas/home/seoContent";
 import Seo from "../components/seo";
+import HomeHeroSection from "../components/sections/home-hero-section";
+import TwoColumn from "../components/sections/two-column";
+
+import scaleImage from "../images/scale.png";
+import TwoColumnH2 from "../components/sections/two-column-h2";
 
 const IndexPage = () => {
 	const [isModalOpen, setIsModalOpen] = useState(false);
@@ -44,11 +49,32 @@ const IndexPage = () => {
 			<Seo title={seoContent.title} description={seoContent.description} ogTitle={seoContent.ogTitle} image={seoContent.image} />
 			<div id='index-page' className='index-page'>
 				<main>
-					<HeroSection heroData={heroData} />
-					<div className='advantages-section'>
-						<AdvantagesSection advantages={advantages} />
-					</div>
+					<HomeHeroSection heroData={heroData} />
+
 					<div className='container'>
+						<TwoColumnH2
+							direction={"ltr"}
+							title={"Access abundance"}
+							text={`
+								<p>Tap into the abundant throughput enabled by <a href='https://celestia.org/what-is-celestia/#what-is-data-availability-sampling' target='_blank' rel='noopener noreferrer'>Data Availability Sampling (DAS)</a>, the first architecture that securely scales with the number of users.</p>
+								<p>Anyone can directly verify and contribute to Celestia by <a href='https://celestia.org/run-a-light-node/' target='_blank' rel='noopener noreferrer'>running a light node</a>.</p>
+							`}
+							image={"graph-scale.png"}
+							btnTitle={"Learn Celestia"}
+							btnUrl={"/what-is-celestia/"}
+						/>
+						<TwoColumnH2
+							direction={"rtl"}
+							title={"Build whatever"}
+							text={`
+								<p>Deploy fast. Launch a blockchain with leading Ethereum rollup frameworks or transform nearly any VM into your own sovereign chain.</p>
+								<p>With Celestia underneath, a customizable blockchain becomes as easy to deploy as a smart contract.</p>
+							`}
+							image={"graph-ecosystem.png"}
+							btnTitle={"Build modular"}
+							btnUrl={"/developer-portal/"}
+						/>
+
 						<section id='explore-celestia' className='explore-celestia'>
 							<div className='d-flex justify-content-center'>
 								<h2 className='with-decor pb-2'>Explore Celestia</h2>
@@ -84,7 +110,7 @@ const IndexPage = () => {
 												</defs>
 											</svg>
 											<div className={"image-wrapper"}>
-												<Image alt={exploreCelestia[0].title} filename={exploreCelestia[0].image} />
+												<Image alt={exploreCelestia[0].title} height={"40px"} filename={exploreCelestia[0].image} />
 											</div>
 											<h3>{exploreCelestia[0].title}</h3>
 											<p>{exploreCelestia[0].text} </p>
@@ -166,45 +192,6 @@ const IndexPage = () => {
 											</div>
 										</div>
 									</Link>
-								</div>
-							</div>
-						</section>
-
-						<section className='cards-section'>
-							<h2 className='with-decor pb-2'>How it works</h2>
-							<div className='subtitle'>
-								Celestia is a minimal blockchain that only orders and publishes transactions but does not execute them. By decoupling
-								the consensus and application execution layers, Celestia modularizes the blockchain technology stack and unlocks new
-								possibilities for decentralized application builders.
-							</div>
-
-							<div className='row mt-5'>
-								<div className='col col-12 col-lg-6 pe-lg-4'>
-									<Card
-										image='home/architecture.png'
-										title='Traditional monolithic architecture'
-										text={
-											"<ul><li>Developers can only use programming languages supported by chain's execution environment</li><li>All applications run on the same process (the world computer model), with shared gas resources</li><li>Smart contracts cannot be updated without a hard fork</li></ul>"
-										}
-									/>
-								</div>
-								<div className='col col-12 col-lg-6 ps-lg-4'>
-									<Card
-										image='home/celestia-architecture.png'
-										title='Celestia-enabled modular architecture'
-										text={
-											"<ul><li>Developers can effortlessly define their own virtual execution environments; similar to virtual machines</li><li>Each application gets its own sovereign execution space, while inheriting the security of Celestia's consensus</li><li>Applications can be updated without main chain hard forks</li></ul>"
-										}
-									/>
-								</div>
-							</div>
-							<div className='row justify-content-center pt-5'>
-								<div className='col-auto'>
-									<a href='/what-is-celestia/' target='_blank'>
-										<button className='button button-simple button-internal' tabIndex={0} id='developer'>
-											Learn More
-										</button>
-									</a>
 								</div>
 							</div>
 						</section>
