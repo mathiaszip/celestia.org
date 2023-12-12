@@ -9,7 +9,7 @@ export const getStarted = {
 			// image: "developer-portal/tutorial.png",
 			type: "anchor",
 			link: {
-				text:"See",
+				text: "See",
 			},
 		},
 		{
@@ -19,7 +19,7 @@ export const getStarted = {
 			// image: "developer-portal/integrate.png",
 			type: "anchor",
 			link: {
-				text:"Explore",
+				text: "Explore",
 			},
 		},
 		{
@@ -29,7 +29,7 @@ export const getStarted = {
 			// image: "developer-portal/concepts.png",
 			type: "anchor",
 			link: {
-				text:"Learn",
+				text: "Learn",
 			},
 		},
 	],
