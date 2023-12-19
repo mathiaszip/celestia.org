@@ -1,19 +1,67 @@
 export const ecosystemCategories = [
 	{
 		id: 1,
-		name: "Rollups as a service",
+		name: "Rollup framework",
+		ecosystems: [
+			{
+				title: "Rollkit",
+				text: "",
+				image: "ecosystem/rollkit.png",
+				url: "https://www.rollkit.dev/",
+			},
+			{
+				title: "Sovereign",
+				text: "",
+				image: "ecosystem/sovereign.png",
+				url: "https://sovereign.xyz/",
+			},
+			{
+				title: "OP Stack",
+				text: "",
+				image: "ecosystem/optimism.png",
+				url: "https://docs.optimism.io/stack/getting-started",
+			},
+			{
+				title: "Stackr",
+				text: "",
+				image: "ecosystem/stackr.png",
+				url: "https://www.stackrlabs.xyz/",
+			},
+			{
+				title: "Cosmos SDK",
+				text: "",
+				image: "ecosystem/cosmos-sdk.png",
+				url: "https://cosmos.network/",
+			},
+			{
+				title: "Arbitrum Orbit",
+				text: "",
+				image: "ecosystem/arbitrum.png",
+				url: "https://arbitrum.io/orbit",
+			},
+			{
+				title: "Dymension",
+				text: "",
+				image: "ecosystem/dymension.png",
+				url: "https://dymension.xyz/",
+			},
+			{
+				title: "Polygon CDK",
+				text: "",
+				image: "ecosystem/polygoncdk.png",
+				url: "https://polygon.technology/polygon-cdk",
+			},
+		],
+	},
+	{
+		id: 2,
+		name: "Rollups-as-a-service",
 		ecosystems: [
 			{
 				title: "Caldera",
 				text: "",
 				image: "ecosystem/caldera.png",
 				url: "https://www.caldera.xyz/",
-			},
-			{
-				title: "Eclipse",
-				text: "",
-				image: "ecosystem/eclipse.png",
-				url: "https://www.eclipse.builders/",
 			},
 			{
 				title: "Vistara",
@@ -33,18 +81,48 @@ export const ecosystemCategories = [
 				image: "ecosystem/altlayer.png",
 				url: "https://www.altlayer.io/",
 			},
-		],
-	},
-	{
-		id: 2,
-		name: "Shared sequencer network",
-		ecosystems: [
 			{
 				title: "Astria",
 				text: "",
 				image: "ecosystem/astria.png",
 				url: "https://astria.org/",
 			},
+			{
+				title: "Conduit",
+				text: "",
+				image: "ecosystem/conduit.png",
+				url: "https://conduit.xyz/",
+			},
+			{
+				title: "Gateway",
+				text: "",
+				image: "ecosystem/gateway.png",
+				url: "https://gateway.fm/",
+			},
+			{
+				title: "Gelato",
+				text: "",
+				image: "ecosystem/gelato.png",
+				url: "https://www.gelato.network/",
+			},
+			{
+				title: "Lumoz",
+				text: "",
+				image: "ecosystem/lumoz.png",
+				url: "https://lumoz.org/",
+			},
+			{
+				title: "Zeeve",
+				text: "",
+				image: "ecosystem/zeeve.png",
+				url: "https://www.zeeve.io/",
+			},
+		],
+	},
+	{
+		id: 3,
+		name: "Shared sequencer network",
+		ecosystems: [
 			{
 				title: "Radius",
 				text: "",
@@ -60,15 +138,9 @@ export const ecosystemCategories = [
 		],
 	},
 	{
-		id: 3,
+		id: 4,
 		name: "Settlement layer",
 		ecosystems: [
-			{
-				title: "Dymension",
-				text: "",
-				image: "ecosystem/dymension.png",
-				url: "https://dymension.xyz/",
-			},
 			{
 				title: "Neutron",
 				text: "",
@@ -82,52 +154,10 @@ export const ecosystemCategories = [
 				url: "https://berachain.com/",
 			},
 			{
-				title: "Layer N",
-				text: "",
-				image: "ecosystem/layern.png",
-				url: "https://www.layern.com/",
-			},
-			{
 				title: "Saga",
 				text: "",
 				image: "ecosystem/saga.png",
 				url: "https://www.saga.xyz/",
-			},
-		],
-	},
-	{
-		id: 4,
-		name: "Rollup framework",
-		ecosystems: [
-			{
-				title: "Rollkit",
-				text: "",
-				image: "ecosystem/rollkit.png",
-				url: "https://www.rollkit.dev/",
-			},
-			{
-				title: "Sovereign",
-				text: "",
-				image: "ecosystem/sovereign.png",
-				url: "https://sovereign.xyz/",
-			},
-			{
-				title: "OP Stack",
-				text: "",
-				image: "ecosystem/optimism.png",
-				url: "https://www.optimism.io/",
-			},
-			{
-				title: "Stackr",
-				text: "",
-				image: "ecosystem/stackr.png",
-				url: "https://www.stackrlabs.xyz/",
-			},
-			{
-				title: "Cosmos SDK",
-				text: "",
-				image: "ecosystem/cosmos-sdk.png",
-				url: "https://cosmos.network/",
 			},
 		],
 	},
@@ -178,12 +208,6 @@ export const ecosystemCategories = [
 				url: "https://www.orblabs.xyz/",
 			},
 			{
-				title: "Polymer",
-				text: "",
-				image: "ecosystem/polymer.png",
-				url: "https://www.polymerlabs.org/",
-			},
-			{
 				title: "Squid",
 				text: "",
 				image: "ecosystem/squid.png",
@@ -225,18 +249,6 @@ export const ecosystemCategories = [
 		id: 8,
 		name: "DeFi",
 		ecosystems: [
-			{
-				title: "Crescent",
-				text: "",
-				image: "ecosystem/crescent.png",
-				url: "https://crescent.network/",
-			},
-			{
-				title: "Duality",
-				text: "",
-				image: "ecosystem/duality.png",
-				url: "https://duality.xyz/",
-			},
 			{
 				title: "Catalyst",
 				text: "",
@@ -344,12 +356,6 @@ export const ecosystemCategories = [
 				text: "",
 				image: "ecosystem/cosmology.png",
 				url: "https://cosmology.tech/",
-			},
-			{
-				title: "Blockless",
-				text: "",
-				image: "ecosystem/blockless.png",
-				url: "https://blockless.network/",
 			},
 			{
 				title: "Numia",
