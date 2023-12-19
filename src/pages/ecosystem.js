@@ -51,17 +51,10 @@ const EcosystemPage = () => {
 						<div className={"row"}>
 							<div className={"col-auto"}>
 								<div className={"text"}>Discover a wide range of apps and services built in the Celestia ecosystem.</div>
-								<a
-									href={"https://drive.google.com/drive/folders/1qx2BJze6oO-TLfaVdmMLC79VjKLzBmLR?usp=share_link"}
-									target={"_blank"}
-									rel={"noreferrer"}
-								>
-									<div className={"button button-white"}>Ecosystem map</div>
-								</a>
 							</div>
 						</div>
 
-						<div className={"row my-2 pt-2 my-lg-5 pt-lg-5 pb-3"}>
+						<div className={"row my-2 pt-2 pt-lg-5 my-lg-5 pb-3"}>
 							<div className={"col-12 col-lg-4"}>
 								<div className={"category-selector"}>
 									<div className={`category-selector-box ${open ? "opened" : ""}`}>
